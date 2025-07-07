@@ -1,0 +1,25 @@
+{
+    "name": "benh/sahiv",
+    "type": "typo3-cms-extension",
+    "description": "sahiv - Inventory Management Extension",
+    "minimum-stability": "stable",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./packages/*"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^13.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "benh\\sahiv\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "sahiv"
+        }
+    }
+}

@@ -1,0 +1,3 @@
+@import 'EXT:sahfe/Configuration/TypoScript/Configuration.constants.typoscript'
+@import 'EXT:sahfe/Configuration/TypoScript/Extensions.constants.typoscript'
+@import 'EXT:sahfe/Configuration/TypoScript/Page.constants.typoscript'

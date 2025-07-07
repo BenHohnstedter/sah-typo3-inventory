@@ -1,0 +1,60 @@
+<div class="row">
+    <div class="col-12 mb-3">
+        <label for="order-title" class="form-label">
+            <f:translate key="title" extensionName="sahiv" />
+        </label>
+        <f:form.textfield property="title" required="true" class="form-control" id="order-title" />
+    </div>
+    <div class="col-12 mb-3">
+        <label for="order-article" class="form-label">
+            <f:translate key="article" extensionName="sahiv" />
+        </label>
+        <f:form.select property="article" options="{articles}" optionValueField="uid" optionLabelField="title"
+            class="form-select" id="order-article" />
+    </div>
+    <div class="col-12 mb-3">
+        <label for="order-pack_amount" class="form-label">
+            <f:translate key="pack_amount" extensionName="sahiv" />
+        </label>
+        <f:form.textfield type="number" property="packAmount" class="form-control" id="order-pack_amount" />
+    </div>
+    <div class="col-12 mb-3">
+        <label for="order-pack_price" class="form-label">
+            <f:translate key="pack_price" extensionName="sahiv" />
+        </label>
+        <f:form.textfield type="number" property="packPrice" class="form-control" id="order-pack_price" />
+    </div>
+    <div class="col-12 mb-3">
+        <label for="order-pieces_per_pack" class="form-label">
+            <f:translate key="pieces_per_pack" extensionName="sahiv" />
+        </label>
+        <f:form.textfield type="number" property="piecesPerPack" class="form-control" id="order-pieces_per_pack" />
+    </div>
+    <div class="col-12 mb-3">
+        <label for="order-bought_at" class="form-label">
+            <f:translate key="bought_at" extensionName="sahiv" />
+        </label>
+        <f:form.textfield type="date" property="boughtAt" class="form-control" id="order-bought_at" />
+    </div>
+    <div class="col-12 mb-3">
+        <label for="order-shop_name" class="form-label">
+            <f:translate key="shop_name" extensionName="sahiv" />
+        </label>
+        <f:form.textfield property="shopName" class="form-control" id="order-shop_name" />
+    </div>
+    <div class="col-12 mb-3">
+        <label for="order-shop_link" class="form-label">
+            <f:translate key="shop_link" extensionName="sahiv" />
+        </label>
+        <f:form.textfield type="url" property="shopLink" class="form-control" id="order-shop_link" />
+    </div>
+    <div class="col-12 mb-3">
+        <label for="article-notes" class="form-label">
+            <f:translate key="notes" extensionName="sahiv" />
+        </label>
+        <f:form.textarea property="notes" class="form-control" id="article-notes" />
+    </div>
+    <div class="col-12">
+        <f:form.submit value="submit" class="btn bg-primary text-white" />
+    </div>
+</div>

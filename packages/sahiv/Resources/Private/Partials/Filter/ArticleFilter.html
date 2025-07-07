@@ -1,0 +1,82 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn bg-primary text-white mb-2" data-bs-toggle="modal"
+    data-bs-target="#articleFilterModal">
+    <f:translate key="filter" extensionName="sahiv" />
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="articleFilterModal" tabindex="-1" aria-labelledby="articleFilterModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="pt-3 px-5">
+                <h5>
+                    <f:translate key="filter" extensionName="sahiv" />
+                </h5>
+                <f:form action="list" name="searchObject" object="{searchObject}">
+                    <div class="row">
+                        <div class="col-12 col-md-4 mb-3">
+                            <label for="title" class="form-label">
+                                <f:translate key="title" extensionName="sahiv" />
+                            </label>
+                            <f:form.textfield property="title" class="form-control" id="title" />
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <label for="acronym" class="form-label">
+                                <f:translate key="acronym" extensionName="sahiv" />
+                            </label>
+                            <f:form.textfield property="acronym" class="form-control" id="acronym" />
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <label for="type" class="form-label">
+                                <f:translate key="type" extensionName="sahiv" />
+                            </label>
+                            <f:form.select property="type" options="{types}" optionValueField="uid"
+                                optionLabelField="title" class="form-select" id="type" prependOptionLabel="None"
+                                prependOptionValue="0" />
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <label for="material" class="form-label">
+                                <f:translate key="material" extensionName="sahiv" />
+                            </label>
+                            <f:form.select property="material" options="{materials}" optionValueField="uid"
+                                optionLabelField="title" class="form-select" id="material" prependOptionLabel="None"
+                                prependOptionValue="0" />
+                        </div>
+                        <div class="col-12 col-md-4 mb-3">
+                            <label for="size" class="form-label">
+                                <f:translate key="size" extensionName="sahiv" />
+                            </label>
+                            <f:form.textfield type="number" property="size" class="form-control" id="size" />
+                        </div>
+                        <div class="col-12 mb-3">
+                            <p class="form-label mb-1">
+                                <f:translate key="colors" extensionName="sahiv" />
+                            </p>
+                            <div class="row">
+                                <f:for each="{colors}" as="color">
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <f:form.checkbox property="colors" class="form-check-input" value="{color.uid}"
+                                            multiple="1" label="color-{color.uid}" />
+                                        <label for="color-{color.uid}" class="form-check-label">{color.title}</label>
+                                    </div>
+                                </f:for>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="reset" class="btn bg-primary text-white">
+                                <f:translate key="reset" extensionName="sahiv" />
+                            </button>
+                            <button type="button" class="btn bg-primary text-white" data-bs-dismiss="modal">
+                                <f:translate key="close" extensionName="sahiv" />
+                            </button>
+                            <f:form.submit value="{f:translate(key: 'submit', extensionName: 'sahiv')}" class="btn
+                            bg-primary text-white" />
+                        </div>
+                    </div>
+                </f:form>
+            </div>
+        </div>
+    </div>
+</div>

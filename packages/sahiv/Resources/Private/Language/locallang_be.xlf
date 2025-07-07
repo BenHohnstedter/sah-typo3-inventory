@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2025-02-13T11:00:00Z" product-name="sahiv">
+        <header/>
+        <body>
+			<trans-unit id="plugin.sahiv_articlelist.test_text" xml:space="preserve">
+				<source>This is a text for testing.</source>
+			</trans-unit>
+
+			<trans-unit id="plugin.sahiv" xml:space="preserve">
+                <source>Lagerverwaltung</source>
+            </trans-unit>
+
+            <trans-unit id="plugin.sahiv_colorlist.title" xml:space="preserve">
+                <source>ColorList</source>
+            </trans-unit>
+            <trans-unit id="plugin.sahiv_colorlist.description" xml:space="preserve">
+                <source>Display all created Colors.</source>
+            </trans-unit>
+
+            <trans-unit id="plugin.sahiv_articlelist.title" xml:space="preserve">
+                <source>ArticleList</source>
+            </trans-unit>
+            <trans-unit id="plugin.sahiv_articlelist.description" xml:space="preserve">
+                <source>Display all created Articles.</source>
+            </trans-unit>
+
+            <trans-unit id="plugin.sahiv_materiallist.title" xml:space="preserve">
+                <source>MaterialList</source>
+            </trans-unit>
+            <trans-unit id="plugin.sahiv_materiallist.description" xml:space="preserve">
+                <source>Display all created Materials.</source>
+            </trans-unit>
+
+            <trans-unit id="plugin.sahiv_orderlist.title" xml:space="preserve">
+                <source>OrderList</source>
+            </trans-unit>
+            <trans-unit id="plugin.sahiv_orderlist.description" xml:space="preserve">
+                <source>Display all created Orders.</source>
+            </trans-unit>
+
+            <trans-unit id="plugin.sahiv_productlist.title" xml:space="preserve">
+                <source>ProductList</source>
+            </trans-unit>
+            <trans-unit id="plugin.sahiv_productlist.description" xml:space="preserve">
+                <source>Display all created Products.</source>
+            </trans-unit>
+
+            <trans-unit id="plugin.sahiv_typelist.title" xml:space="preserve">
+                <source>TypeList</source>
+            </trans-unit>
+            <trans-unit id="plugin.sahiv_typelist.description" xml:space="preserve">
+                <source>Display all created Types.</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,50 @@
+page = PAGE
+page.10 = FLUIDTEMPLATE
+page.10 {
+    templateName = TEXT
+    templateName {
+        cObject = TEXT
+        cObject {
+            data = pagelayout
+            required = 1
+            case = ucfirst
+            split {
+                token = pagets__
+                cObjNum = 1
+                1.current = 1
+            }
+        }
+        ifEmpty = Default
+    }
+    templateRootPaths {
+        0 = EXT:sahfe/Resources/Private/Page/Templates/
+    }
+    partialRootPaths {
+        0 = EXT:sahfe/Resources/Private/Page/Partials/
+    }
+    layoutRootPaths {
+        0 = EXT:sahfe/Resources/Private/Page/Layouts/
+    }
+    variables {
+        header < styles.content.get
+        header.select.where = {#colPos}=1
+        main < styles.content.get
+        main.select.where = {#colPos}=0
+    }
+    dataProcessing {
+        40 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+        40 {
+            table = tt_content
+            orderBy = sorting
+            where = colPos = 1
+            as = headerContent
+        }
+        50 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+        50 {
+            table = tt_content
+            orderBy = sorting
+            where = colPos = 0
+            as = mainContent
+        }
+    }
+}

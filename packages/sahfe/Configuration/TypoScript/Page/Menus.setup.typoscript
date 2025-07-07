@@ -1,0 +1,31 @@
+page.10 {
+    dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+        10 {
+            special = directory
+            special.value = 2
+            levels = 2
+            as = headerMenu
+            expandAll = 1
+            includeSpacer = 1
+            titleField = nav_title // title
+        }
+        20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+        20 {
+            special = directory
+            special.value = 4
+            as = footerMenu
+            titleField = nav_title // title
+        }
+        30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+        30 {
+            special = directory
+            special.value = 3
+            levels = 2
+            as = sidebarMenu
+            expandAll = 1
+            includeSpacer = 1
+            titleField = nav_title // title
+        }
+    }
+}

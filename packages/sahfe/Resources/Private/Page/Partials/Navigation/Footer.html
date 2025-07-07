@@ -1,0 +1,23 @@
+<footer class="mt-5">
+    <nav class="navbar navbar-expand">
+        <div class="container-fluid w-100 d-block">
+            <div class="collapse navbar-collapse justify-content-center w-100">
+                <ul class="navbar-nav d-block d-sm-flex">
+                    <f:for each="{footerMenu}" as="footermenuItem" iteration="footerMenuIteration">
+                        <li class="navbar-nav d-block text-center">
+                            <f:link.page pageUid="{footermenuItem.data.uid}" class="nav-link">
+                                {footermenuItem.title}
+                            </f:link.page>
+                        </li>
+                    </f:for>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid mb-5">
+        <p class="m-0 text-center">
+            Created by Ben Hohnstedter <br>
+            All rights reserved
+        </p>
+    </div>
+</footer>

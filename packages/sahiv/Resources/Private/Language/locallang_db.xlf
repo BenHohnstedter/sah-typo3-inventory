@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2025-02-13T11:00:00Z" product-name="sahiv">
+		<header/>
+		<body>
+            <trans-unit id="tx_sahiv_domain_model_test.text" xml:space="preserve">
+                <source>This is a text for testing.</source>
+            </trans-unit>
+
+            <trans-unit id="tx_sahiv_domain_model_color" xml:space="preserve">
+                <source>Color</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_color.title" xml:space="preserve">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_color.articles" xml:space="preserve">
+                <source>Articles</source>
+            </trans-unit>
+
+            <trans-unit id="tx_sahiv_domain_model_color.notes" xml:space="preserve">
+                <source>Notes</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_article" xml:space="preserve">
+                <source>Article</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_article.title" xml:space="preserve">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_article.acronym" xml:space="preserve">
+                <source>Acronym</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_article.type" xml:space="preserve">
+                <source>Type</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_article.colors" xml:space="preserve">
+                <source>Colors</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_article.material" xml:space="preserve">
+                <source>Material</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_article.size" xml:space="preserve">
+                <source>Size</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_article.in_stock" xml:space="preserve">
+                <source>In Stock</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_article.notes" xml:space="preserve">
+                <source>Notes</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_article.images" xml:space="preserve">
+                <source>Media Files</source>
+            </trans-unit>
+
+            <trans-unit id="tx_sahiv_domain_model_material" xml:space="preserve">
+                <source>Material</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_material.title" xml:space="preserve">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_material.notes" xml:space="preserve">
+                <source>Notes</source>
+            </trans-unit>
+
+            <trans-unit id="tx_sahiv_domain_model_order" xml:space="preserve">
+                <source>Order</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_order.title" xml:space="preserve">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_order.article" xml:space="preserve">
+                <source>Article</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_order.pack_amount" xml:space="preserve">
+                <source>Pack Amount</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_order.pack_price" xml:space="preserve">
+                <source>Pack Price</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_order.pieces_per_pack" xml:space="preserve">
+                <source>Pieces Per Pack</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_order.bought_at" xml:space="preserve">
+                <source>Bought At</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_order.shop_name" xml:space="preserve">
+                <source>Shop Name</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_order.shop_link" xml:space="preserve">
+                <source>Shop Link</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_order.is_only_adjustment" xml:space="preserve">
+                <source>Is Only Adjustment</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_order.adjustment_type" xml:space="preserve">
+                <source>Adjustment Type</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_order.notes" xml:space="preserve">
+                <source>Notes</source>
+            </trans-unit>
+
+            <trans-unit id="tx_sahiv_domain_model_product" xml:space="preserve">
+                <source>Product</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_product.title" xml:space="preserve">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_product.acronym" xml:space="preserve">
+                <source>Acronym</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_product.productcomponents" xml:space="preserve">
+                <source>Product Components</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_product.is_bought" xml:space="preserve">
+                <source>Is Bought</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_product.colors" xml:space="preserve">
+                <source>Colors</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_product.size" xml:space="preserve">
+                <source>Size</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_product.selling_price" xml:space="preserve">
+                <source>Selling Price</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_product.working_hours" xml:space="preserve">
+                <source>Working Hours</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_product.type" xml:space="preserve">
+                <source>Product Type</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_product.crafted_at" xml:space="preserve">
+                <source>Crafted At</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_product.notes" xml:space="preserve">
+                <source>Notes</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_product.images" xml:space="preserve">
+                <source>Media Files</source>
+            </trans-unit>
+
+            <trans-unit id="tx_sahiv_domain_model_productcomponent" xml:space="preserve">
+                <source>Product Component</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_productcomponent.title" xml:space="preserve">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_productcomponent.article" xml:space="preserve">
+                <source>Article</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_productcomponent.used_amount" xml:space="preserve">
+                <source>Used Amount</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_productcomponent.notes" xml:space="preserve">
+                <source>Notes</source>
+            </trans-unit>
+
+            <trans-unit id="tx_sahiv_domain_model_type" xml:space="preserve">
+                <source>Type</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_type.title" xml:space="preserve">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_type.notes" xml:space="preserve">
+                <source>Notes</source>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-12 mb-3">
+        <label for="title" class="form-label">
+            <f:translate key="title" extensionName="sahiv" />
+        </label>
+        <f:form.textfield property="title" class="form-control" id="title" required="true" />
+    </div>
+    <div class="col-12 mb-3">
+        <p class="form-label mb-1">
+            <f:translate key="is_type_for" extensionName="sahiv" />
+        </p>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4">
+                <f:form.checkbox property="isTypeFor" class="form-check-input" value="0" multiple="0"
+                    label="is_type_for-article" />
+                <label for="is_type_for-article" class="form-check-label">
+                    <f:translate key="article" extensionName="sahiv" />
+                </label>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <f:form.checkbox property="isTypeFor" class="form-check-input" value="1" multiple="0"
+                    label="is_type_for-product" />
+                <label for="is_type_for-product" class="form-check-label">
+                    <f:translate key="product" extensionName="sahiv" />
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mb-3">
+        <label for="notes" class="form-label">
+            <f:translate key="notes" extensionName="sahiv" />
+        </label>
+        <f:form.textarea property="notes" class="form-control" id="notes" />
+    </div>
+    <div class="col-12">
+        <f:form.submit value="submit" class="btn bg-primary text-white" />
+    </div>
+</div>

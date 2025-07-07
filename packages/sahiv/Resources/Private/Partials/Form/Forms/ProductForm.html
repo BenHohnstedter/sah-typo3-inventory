@@ -1,0 +1,91 @@
+<div class="row">
+    <div class="col-12 mb-3">
+        <label for="product-title" class="form-label">
+            <f:translate key="title" extensionName="sahiv" />
+        </label>
+        <f:form.textfield property="title" required="true" class="form-control" id="product-title" />
+    </div>
+    <div class="col-12 mb-3">
+        <label for="product-acronym" class="form-label">
+            <f:translate key="acronym" extensionName="sahiv" />
+        </label>
+        <f:form.textfield property="acronym" class="form-control" id="product-acronym" />
+    </div>
+    <div class="col-12 mb-3">
+        <div class="form-check form-switch">
+            <f:form.checkbox property="isBought" value="1" class="form-check-input" id="product-is_bought" />
+            <label class="form-check-label" for="product-is_bought">
+                <f:translate key="is_bought" extensionName="sahiv" />
+            </label>
+        </div>
+    </div>
+    <div class="col-12 mb-3">
+        <label for="product-image" class="form-label">
+            <f:translate key="image" extensionName="sahiv" />
+        </label>
+        <f:form.upload name="image" class="form-control" id="product-image" />
+    </div>
+    <div class="col-12 mb-3">
+        <label for="product-type" class="form-label">
+            <f:translate key="type" extensionName="sahiv" />
+        </label>
+        <f:form.select property="type" options="{types}" optionValueField="uid" optionLabelField="title"
+            class="form-select" id="product-type" />
+    </div>
+    <div class="col-12 mb-3">
+        <p class="form-label mb-1">
+            <f:translate key="colors" extensionName="sahiv" />
+        </p>
+        <div class="row">
+            <f:for each="{colors}" as="color">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <f:form.checkbox property="colors" class="form-check-input" value="{color.uid}" multiple="1"
+                        label="color-{color.uid}" />
+                    <label for="color-{color.uid}" class="form-check-label">{color.title}</label>
+                </div>
+            </f:for>
+        </div>
+    </div>
+    <div class="col-12 mb-3">
+        <f:render partial="Form/AddProductComponentButton.html" arguments="{_all}" />
+    </div>
+    <f:for each="{product.productComponents}" as="productComponent" iteration="iterator">
+        <div class="col-12">
+            <f:render partial="Form/ProductComponentFields.html"
+                arguments="{productComponent: productComponent, articles: articles, iterator: iterator.index}" />
+        </div>
+    </f:for>
+    <div class="col-12 mb-3">
+        <label for="product-size" class="form-label">
+            <f:translate key="size" extensionName="sahiv" />
+        </label>
+        <f:form.textfield type="number" property="size" class="form-control" id="product-size" />
+    </div>
+    <div class="col-12 mb-3">
+        <label for="product-selling_price" class="form-label">
+            <f:translate key="selling_price" extensionName="sahiv" />
+        </label>
+        <f:form.textfield type="number" property="sellingPrice" class="form-control" id="product-selling_price" />
+    </div>
+    <div class="col-12 mb-3">
+        <label for="order-crafted_at" class="form-label">
+            <f:translate key="crafted_at" extensionName="sahiv" />
+        </label>
+        <f:form.textfield type="date" property="craftedAt" class="form-control" id="order-crafted_at" />
+    </div>
+    <div class="col-12 mb-3">
+        <label for="product-working_hours" class="form-label">
+            <f:translate key="working_hours" extensionName="sahiv" />
+        </label>
+        <f:form.textfield type="number" property="workingHours" class="form-control" id="product-working_hours" />
+    </div>
+    <div class="col-12 mb-3">
+        <label for="product-notes" class="form-label">
+            <f:translate key="notes" extensionName="sahiv" />
+        </label>
+        <f:form.textarea property="notes" class="form-control" id="product-notes" />
+    </div>
+    <div class="col-12">
+        <f:form.submit value="submit" class="btn bg-primary text-white" />
+    </div>
+</div>

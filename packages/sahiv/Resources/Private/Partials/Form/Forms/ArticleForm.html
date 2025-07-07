@@ -1,0 +1,63 @@
+<div class="row">
+    <div class="col-12 mb-3">
+        <label for="article-title" class="form-label">
+            <f:translate key="title" extensionName="sahiv" />
+        </label>
+        <f:form.textfield property="title" required="true" class="form-control" id="article-title" />
+    </div>
+    <div class="col-12 mb-3">
+        <label for="article-acronym" class="form-label">
+            <f:translate key="acronym" extensionName="sahiv" />
+        </label>
+        <f:form.textfield property="acronym" class="form-control" id="article-acronym" />
+    </div>
+    <div class="col-12 mb-3">
+        <label for="article-image" class="form-label">
+            <f:translate key="image" extensionName="sahiv" />
+        </label>
+        <f:form.upload name="image" class="form-control" id="article-image" />
+    </div>
+    <div class="col-12 mb-3">
+        <label for="article-type" class="form-label">
+            <f:translate key="type" extensionName="sahiv" />
+        </label>
+        <f:form.select property="type" options="{types}" optionValueField="uid" optionLabelField="title"
+            class="form-select" id="article-type" />
+    </div>
+    <div class="col-12 mb-3">
+        <p class="form-label mb-1">
+            <f:translate key="colors" extensionName="sahiv" />
+        </p>
+        <div class="row">
+            <f:for each="{colors}" as="color">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <f:form.checkbox property="colors" class="form-check-input" value="{color.uid}" multiple="1"
+                        id="color-{color.uid}" />
+                    <label for="color-{color.uid}" class="form-check-label">{color.title}</label>
+                </div>
+            </f:for>
+        </div>
+    </div>
+    <div class="col-12 mb-3">
+        <label for="article-material" class="form-label">
+            <f:translate key="material" extensionName="sahiv" />
+        </label>
+        <f:form.select property="material" options="{materials}" optionValueField="uid" optionLabelField="title"
+            class="form-select" id="article-material" />
+    </div>
+    <div class="col-12 mb-3">
+        <label for="article-size" class="form-label">
+            <f:translate key="size" extensionName="sahiv" />
+        </label>
+        <f:form.textfield type="number" property="size" class="form-control" id="article-size" />
+    </div>
+    <div class="col-12 mb-3">
+        <label for="article-notes" class="form-label">
+            <f:translate key="notes" extensionName="sahiv" />
+        </label>
+        <f:form.textarea property="notes" class="form-control" id="article-notes" />
+    </div>
+    <div class="col-12">
+        <f:form.submit value="submit" class="btn bg-primary text-white" />
+    </div>
+</div>

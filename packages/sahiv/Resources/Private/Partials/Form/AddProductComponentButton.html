@@ -1,0 +1,25 @@
+<span id="add_product_component" class="btn bg-primary text-white w-100 mb-3">Add Product Component</span>
+<div id="product_component_fields"></div>
+
+<f:asset.script identifier="product_component_fields">
+    let productComponentFields = document.getElementById("product_component_fields");
+
+    let iterator = 1000;
+
+    let addNew = document.getElementById("add_product_component");
+    addNew.addEventListener('click', () => {
+    let newProductComponent = document.createElement("div");
+    newProductComponent.classList.add('container-fluid');
+    newProductComponent.classList.add('p-0');
+
+    let productComponentContent = document.createElement("div");
+    productComponentContent.classList.add('row');
+    productComponentContent.innerHTML = `
+    <f:render partial='Form/ProductComponentFields.html' arguments='{articles: articles, iterator:"`+iterator+`"}' />`;
+    newProductComponent.appendChild(productComponentContent);
+
+    productComponentFields.appendChild(newProductComponent);
+
+    iterator++;
+    });
+</f:asset.script>

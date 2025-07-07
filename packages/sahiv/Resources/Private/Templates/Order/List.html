@@ -1,0 +1,50 @@
+<h5 class="mb-3">
+    <f:translate key="list" extensionName="sahiv" />
+</h5>
+
+<f:render partial="Form/CreateLink.html" />
+
+<div class="px-3">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <f:translate key="title" extensionName="sahiv" />
+                    </th>
+                    <th scope="col">
+                        <f:translate key="articles" extensionName="sahiv" />
+                    </th>
+                    <th scope="col">
+                        <f:translate key="pack_amount" extensionName="sahiv" />
+                    </th>
+                    <th scope="col">
+                        <f:translate key="pack_price" extensionName="sahiv" />
+                    </th>
+                    <th scope="col">
+                        <f:translate key="pieces_per_pack" extensionName="sahiv" />
+                    </th>
+                    <th scope="col">
+                        <f:translate key="bought_at" extensionName="sahiv" />
+                    </th>
+                    <th scope="col">
+                        <f:translate key="shop_name" extensionName="sahiv" />
+                    </th>
+                    <th scope="col">
+                        <f:translate key="notes" extensionName="sahiv" />
+                    </th>
+                    <f:security.ifAuthenticated>
+                        <th scope="col" class="text-end">
+                            <f:translate key="settings" extensionName="sahiv" />
+                        </th>
+                    </f:security.ifAuthenticated>
+                </tr>
+            </thead>
+            <tbody>
+                <f:for each="{orders}" as="order">
+                    <f:render partial="List/OrderItem" arguments="{order: order, orderIterator: orderIterator}" />
+                </f:for>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,2 @@
+@import 'EXT:sahfe/Configuration/TsConfig/Page/PageLayout/*.tsconfig'
+@import 'EXT:sahfe/Configuration/TsConfig/User/Admin.tsconfig'

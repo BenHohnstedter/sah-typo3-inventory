@@ -1,0 +1,16 @@
+page {
+    includeCSS {
+        bootstrap = EXT:sahfe/Resources/Public/Css/bootstrap.min.css
+        website = EXT:sahfe/Resources/Public/Css/website.css
+    }
+    includeJSFooter {
+        jquery = EXT:sahfe/Resources/Public/JavaScript/jquery-3.2.1.slim.min.js
+        popper = EXT:sahfe/Resources/Public/JavaScript/popper.min.js
+        bootstrap = EXT:sahfe/Resources/Public/JavaScript/bootstrap.bundle.min.js
+        website = EXT:sahfe/Resources/Public/JavaScript/website.js
+    }
+    meta {
+        viewport = width=device-width,initial-scale=1.0
+    }
+    shortcutIcon = EXT:sahfe/Resources/Public/Images/Logo.png
+}

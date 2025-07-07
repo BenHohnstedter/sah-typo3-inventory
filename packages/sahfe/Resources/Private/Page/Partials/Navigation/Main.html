@@ -1,0 +1,59 @@
+
+<header class="bg-primary border-3 border-bottom border-dark shadow-sm">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <f:link.page pageUid="1" class="navbar-brand text-white" title="Startseite - Soul Arthouse">
+                            <f:image src="EXT:sahfe/Resources/Public/Images/Logo.png" class="img-fluid sah-logo-size"
+                                     alt="Soul Arthouse Logo" />
+                            <span class="ps-3">Soul Arthouse</span>
+                        </f:link.page>
+                        <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#fff" class="bi bi-list" viewBox="0 0 16 16">
+                                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <f:for each="{headerMenu}" as="menuItem" iteration="headerMenuIteration">
+
+                                    <f:if condition="{menuItem.children}">
+                                        <f:then>
+                                            <li class="dropdown ps-lg-5">
+                                                <a class="sah-link-invert p-3 dropdown-toggle sah-header-font-size" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    {menuItem.title}
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+                                                    <f:for each="{menuItem.children}" as="menuChild" iteration="headerChildIteration">
+                                                        <li class="{f:if(condition:'{menuChild.active}',then:'active')}">
+                                                            <f:link.page pageUid="{menuChild.data.uid}" class="sah-link d-block dropdown-item">
+                                                                {menuChild.title}
+                                                            </f:link.page>
+                                                        </li>
+                                                    </f:for>
+                                                </ul>
+                                            </li>
+                                        </f:then>
+                                        <f:else>
+                                            <li class="nav-item {f:if(condition:'{menuItem.active}',then:'active')} ps-lg-5">
+                                                <f:link.page pageUid="{menuItem.data.uid}" class="sah-link-invert sah-header-font-size p-3">
+                                                    {menuItem.title}
+                                                </f:link.page>
+                                            </li>
+                                        </f:else>
+                                    </f:if>
+                                </f:for>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>

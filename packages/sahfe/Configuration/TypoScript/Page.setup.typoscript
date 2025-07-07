@@ -1,0 +1,4 @@
+@import 'EXT:sahfe/Configuration/TypoScript/Page/CssAndJs.setup.typoscript'
+@import 'EXT:sahfe/Configuration/TypoScript/Page/Menus.setup.typoscript'
+@import 'EXT:sahfe/Configuration/TypoScript/Page/Templates.setup.typoscript'
+@import 'EXT:sahfe/Configuration/TypoScript/Page/Ttcontent.setup.typoscript'

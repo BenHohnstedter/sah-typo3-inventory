@@ -1,0 +1,24 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    benh\sahiv\Domain\Model\Color::class => [
+        'tableName' => 'tx_sahiv_domain_model_color',
+    ],
+    benh\sahiv\Domain\Model\Article::class => [
+        'tableName' => 'tx_sahiv_domain_model_article',
+    ],
+    benh\sahiv\Domain\Model\Material::class => [
+        'tableName' => 'tx_sahiv_domain_model_material',
+    ],
+    benh\sahiv\Domain\Model\Order::class => [
+        'tableName' => 'tx_sahiv_domain_model_order',
+    ],
+    benh\sahiv\Domain\Model\Product::class => [
+        'tableName' => 'tx_sahiv_domain_model_product',
+    ],
+    benh\sahiv\Domain\Model\Type::class => [
+        'tableName' => 'tx_sahiv_domain_model_type',
+    ],
+];

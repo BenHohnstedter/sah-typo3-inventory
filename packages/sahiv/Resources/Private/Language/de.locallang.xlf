@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="EXT:benh/sahiv/Resources/Private/Language/locallang.xlf" date="2025-07-01T10:00:00Z" target-language="de" product-name="sahiv">
+		<header/>
+		<body>
+            <trans-unit id="acronym" xml:space="preserve">
+                <target>Kürzel</target>
+            </trans-unit>
+            <trans-unit id="bought_at" xml:space="preserve">
+                <target>Kaufdatum</target>
+            </trans-unit>
+            <trans-unit id="close" xml:space="preserve">
+                <target>Schließen</target>
+            </trans-unit>
+            <trans-unit id="color" xml:space="preserve">
+                <target>Farbe</target>
+            </trans-unit>
+            <trans-unit id="colors" xml:space="preserve">
+                <target>Farben</target>
+            </trans-unit>
+            <trans-unit id="component" xml:space="preserve">
+                <target>Komponent</target>
+            </trans-unit>
+            <trans-unit id="components" xml:space="preserve">
+                <target>Komponenten</target>
+            </trans-unit>
+            <trans-unit id="crafted_at" xml:space="preserve">
+                <target>Hergestellt am</target>
+            </trans-unit>
+            <trans-unit id="create" xml:space="preserve">
+                <target>Erstellen</target>
+            </trans-unit>
+            <trans-unit id="delete" xml:space="preserve">
+                <target>Löschen</target>
+            </trans-unit>
+            <trans-unit id="detail" xml:space="preserve">
+                <target>Detailansicht</target>
+            </trans-unit>
+            <trans-unit id="edit" xml:space="preserve">
+                <target>Bearbeiten</target>
+            </trans-unit>
+            <trans-unit id="filter" xml:space="preserve">
+                <target>Filter</target>
+            </trans-unit>
+            <trans-unit id="image" xml:space="preserve">
+                <target>Bild</target>
+            </trans-unit>
+            <trans-unit id="images" xml:space="preserve">
+                <target>Bilder</target>
+            </trans-unit>
+            <trans-unit id="article" xml:space="preserve">
+                <target>Gegenstand</target>
+            </trans-unit>
+            <trans-unit id="articles" xml:space="preserve">
+                <target>Gegenstände</target>
+            </trans-unit>
+            <trans-unit id="in_stock" xml:space="preserve">
+                <target>Lagerbestand</target>
+            </trans-unit>
+            <trans-unit id="is_bought" xml:space="preserve">
+                <target>Ist Gekauft</target>
+            </trans-unit>
+            <trans-unit id="list" xml:space="preserve">
+                <target>Liste</target>
+            </trans-unit>
+            <trans-unit id="material" xml:space="preserve">
+                <target>Material</target>
+            </trans-unit>
+            <trans-unit id="material_price" xml:space="preserve">
+                <target>Materialpreis</target>
+            </trans-unit>
+            <trans-unit id="new" xml:space="preserve">
+                <target>Neu</target>
+            </trans-unit>
+            <trans-unit id="notes" xml:space="preserve">
+                <target>Notizen</target>
+            </trans-unit>
+            <trans-unit id="order" xml:space="preserve">
+                <target>Bestellung</target>
+            </trans-unit>
+            <trans-unit id="orders" xml:space="preserve">
+                <target>Bestellung</target>
+            </trans-unit>
+            <trans-unit id="pack_amount" xml:space="preserve">
+                <target>Packungsanzahl</target>
+            </trans-unit>
+            <trans-unit id="pack_price" xml:space="preserve">
+                <target>Packungspreis</target>
+            </trans-unit>
+            <trans-unit id="pieces_per_pack" xml:space="preserve">
+                <target>Stücke pro Packung</target>
+            </trans-unit>
+            <trans-unit id="price" xml:space="preserve">
+                <target>Preis</target>
+            </trans-unit>
+            <trans-unit id="product" xml:space="preserve">
+                <target>Produkt</target>
+            </trans-unit>
+            <trans-unit id="products" xml:space="preserve">
+                <target>Produkte</target>
+            </trans-unit>
+            <trans-unit id="reset" xml:space="preserve">
+                <target>Zurücksetzen</target>
+            </trans-unit>
+            <trans-unit id="selling_price" xml:space="preserve">
+                <target>Verkaufspreis</target>
+            </trans-unit>
+            <trans-unit id="settings" xml:space="preserve">
+                <target>Verkaufspreis</target>
+            </trans-unit>
+            <trans-unit id="shop_link" xml:space="preserve">
+                <target>Laden Link</target>
+            </trans-unit>
+            <trans-unit id="shop_name" xml:space="preserve">
+                <target>Laden Name</target>
+            </trans-unit>
+            <trans-unit id="size" xml:space="preserve">
+                <target>Größe</target>
+            </trans-unit>
+            <trans-unit id="submit" xml:space="preserve">
+                <target>Bestätigen</target>
+            </trans-unit>
+            <trans-unit id="title" xml:space="preserve">
+                <target>Titel</target>
+            </trans-unit>
+            <trans-unit id="type" xml:space="preserve">
+                <target>Typ</target>
+            </trans-unit>
+            <trans-unit id="unit_price" xml:space="preserve">
+                <target>Stückpreis</target>
+            </trans-unit>
+            <trans-unit id="used_amount" xml:space="preserve">
+                <target>genutzte Menge</target>
+            </trans-unit>
+            <trans-unit id="working_hours" xml:space="preserve">
+                <target>Arbeitsstunden</target>
+            </trans-unit>
+            <trans-unit id="quantity" xml:space="preserve">
+                <target>Anzahl</target>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>

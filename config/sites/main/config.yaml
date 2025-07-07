@@ -1,0 +1,38 @@
+base: 'https://soul-arthouse.ddev.site/'
+languages:
+  -
+    title: German
+    enabled: true
+    languageId: 0
+    base: /
+    locale: de_DE.utf8
+    navigationTitle: English
+    flag: de
+    hreflang: ''
+    websiteTitle: ''
+  -
+    title: English
+    enabled: true
+    locale: en_US
+    hreflang: ''
+    base: /en/
+    websiteTitle: ''
+    navigationTitle: English
+    fallbackType: strict
+    fallbacks: '0'
+    flag: en-us-gb
+    languageId: 1
+  -
+    title: Dutch
+    enabled: true
+    locale: nl_NL
+    hreflang: ''
+    base: /nl/
+    websiteTitle: ''
+    navigationTitle: Nederlands
+    fallbackType: strict
+    fallbacks: '0'
+    flag: nl
+    languageId: 2
+rootPageId: 1
+websiteTitle: 'Soul Arthouse'

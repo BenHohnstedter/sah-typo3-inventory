@@ -1,0 +1,7 @@
+<div class="input-group mb-3">
+    <f:form.select name="productComponents[{iterator}][article]" options="{articles}" optionValueField="uid"
+        optionLabelField="title" prependOptionLabel="{productComponent.article.title}"
+        prependOptionValue="{productComponent.article.uid}" class="form-select w-25" />
+    <f:form.textfield type="number" name="productComponents[{iterator}][usedAmount]" class="form-control w-75"
+        value="{productComponent.usedAmount}" />
+</div>

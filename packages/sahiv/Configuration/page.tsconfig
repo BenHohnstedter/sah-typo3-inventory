@@ -1,0 +1,58 @@
+mod.wizards.newContentElement.wizardItems {
+  // add the content elements to the tab "plugins"
+  sahiv {
+    after = plugins
+    header = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv
+    show = *
+    elements {
+      sahiv_colorlist {
+        title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_colorlist.title
+        description = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_colorlist.description
+        tt_content_defValues {
+          CType = list
+          list_type = sahiv_articlelist
+        }
+      }
+      sahiv_articlelist {
+        title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_articlelist.title
+        description = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_articlelist.description
+        tt_content_defValues {
+          CType = list
+          list_type = sahiv_articlelist
+        }
+      }
+      sahiv_materiallist {
+        title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_materiallist.title
+        description = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_materiallist.description
+        tt_content_defValues {
+          CType = list
+          list_type = sahiv_materiallist
+        }
+      }
+      sahiv_orderlist {
+        title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_orderlist.title
+        description = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_orderlist.description
+        tt_content_defValues {
+          CType = list
+          list_type = sahiv_orderlist
+        }
+      }
+      sahiv_productlist {
+        title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_productlist.title
+        description = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_productlist.description
+        tt_content_defValues {
+          CType = list
+          list_type = sahiv_productlist
+        }
+      }
+      sahiv_typelist {
+        title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_typelist.title
+        description = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_typelist.description
+        tt_content_defValues {
+          CType = list
+          list_type = sahiv_typelist
+        }
+      }
+    }
+  }
+}

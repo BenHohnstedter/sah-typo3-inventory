@@ -1,0 +1,31 @@
+<nav class="col-12 col-lg-2 bg-white border border-end-1 border-secondary shadow-sm rounded-bottom-3">
+    <ul class="list-unstyled m-0 py-3">
+        <f:for each="{sidebarMenu}" as="menuItem" iteration="sidebarMenuIteration">
+            <f:if condition="{menuItem.children}">
+                <f:then>
+                    <li class="py-2 ps-3">
+                        <span href="{menuItem.link}" class="text-black">
+                            {menuItem.title}
+                        </span>
+                        <ul class="list-unstyled m-0">
+                            <f:for each="{menuItem.children}" as="menuChild" iteration="sidebarChildIteration">
+                                <li class="{f:if(condition:'{menuChild.active}',then:'active')} pt-2 ps-3">
+                                    <f:link.page pageUid="{menuChild.data.uid}" class="sah-link d-block">
+                                        {menuChild.title}
+                                    </f:link.page>
+                                </li>
+                            </f:for>
+                        </ul>
+                    </li>
+                </f:then>
+                <f:else>
+                    <li class="{f:if(condition:'{menuItem.active}',then:'active')} py-2 ps-3">
+                        <f:link.page pageUid="{menuItem.data.uid}" class="sah-link d-block">
+                            {menuItem.title}
+                        </f:link.page>
+                    </li>
+                </f:else>
+            </f:if>
+        </f:for>
+    </ul>
+</nav>

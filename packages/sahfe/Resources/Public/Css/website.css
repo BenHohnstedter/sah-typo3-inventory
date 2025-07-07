@@ -1,0 +1,71 @@
+:root {
+    /* Global Colors */
+    --bs-primary-rgb: 68, 23, 82 !important; /* primary */
+    --bs-secondary-rgb: 247, 248, 249 !important; /* secondary */
+    --bs-body-color: #000!important; /* text color */
+}
+
+body {
+    background-color: rgb(247, 248, 249) !important;
+}
+
+.sah-header-font-size {
+    font-size: 1.1rem !important;
+}
+
+.active {
+    font-weight: bold !important;
+    text-decoration: rgb(255, 255, 255) underline !important;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    text-decoration: none;
+    background-color: inherit !important;
+}
+
+.sah-logo-size {
+    height: 50px !important;
+    width: auto !important;
+}
+
+.sah-link {
+    color: rgb(0, 0, 0) !important;
+    text-decoration: none !important;
+}
+
+.sah-link:hover {
+    color: rgb(68, 23, 82) !important;
+    text-decoration: underline !important;
+    transition: color 0.1s !important;
+}
+
+.sah-link-invert {
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none !important;
+}
+
+.sah-link-invert:hover {
+    color: rgb(68, 23, 82) !important;
+    text-decoration: underline !important;
+    transition: background-color 0.2s !important;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.sah-container-one-to-one-aspect-ratio  {
+    width: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+    position: relative; /* If you want text inside of it */
+}
+
+.sah-content-one-to-one-aspect-ratio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.sah-product-is-bought {
+    filter: brightness(50%);
+}

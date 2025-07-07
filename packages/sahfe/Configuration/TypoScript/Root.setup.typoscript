@@ -1,0 +1,4 @@
+@import 'EXT:sahfe/Configuration/TypoScript/Extensions.setup.typoscript'
+@import 'EXT:sahfe/Configuration/TypoScript/Page.setup.typoscript'
+
+config.contentObjectExceptionHandler = 0

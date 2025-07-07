@@ -1,0 +1,15 @@
+<h5 class="mb-3">
+    <f:translate key="list" extensionName="sahiv" />
+</h5>
+
+<f:render partial="Filter/ProductFilter.html" arguments="{_all}" />
+
+<f:render partial="Form/CreateLink.html" />
+
+<div class="container-fluid my-2">
+    <div class="row">
+        <f:for each="{products}" as="product" iteration="productIterator">
+            <f:render partial="List/ProductItem" arguments="{product: product}" />
+        </f:for>
+    </div>
+</div>

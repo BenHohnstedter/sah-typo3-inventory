@@ -64,10 +64,11 @@ CREATE TABLE tx_sahiv_domain_model_product (
 # Table structure for table 'tx_sahiv_domain_model_productcomponent'
 #
 CREATE TABLE tx_sahiv_domain_model_productcomponent (
-     parent int(11) DEFAULT 0 NOT NULL,
-     parent_table text,
-     article int(11) DEFAULT 0 NOT NULL,
-     used_amount int(11) DEFAULT 0 NOT NULL
+    uid int(11) NOT NULL AUTO_INCREMENT,
+    parent int(11) DEFAULT 0 NOT NULL,
+    article int(11) DEFAULT 0 NOT NULL,
+    used_amount int(11) DEFAULT 0 NOT NULL,
+    PRIMARY KEY (uid)
 );
 
 #

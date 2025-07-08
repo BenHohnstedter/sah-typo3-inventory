@@ -13,7 +13,6 @@ return [
         'crdate' => 'crdate',
         'delete' => 'deleted',
         'sortby' => 'sorting',
-        'default_sortby' => 'title',
         'versioningWS' => true,
         'rootLevel' => -1,
         'typeicon_classes' => [
@@ -35,11 +34,6 @@ return [
     ],
     'columns' => [
         'parent' => [
-            'config' => [
-                'type' => 'passthrough',
-            ],
-        ],
-        'parent_table' => [
             'config' => [
                 'type' => 'passthrough',
             ],

@@ -11,7 +11,7 @@
             <div class="justify-content-between d-flex">
                 <h5 class="card-title my-auto">{article.title}</h5>
                 <div>
-                    <f:security.ifAuthenticated>
+                    <f:security.ifHasRole role="Admin">
                         <div class="btn-group dropstart">
                             <button type="button" class="btn px-3 py-2 bg-primary rounded-3 text-white"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -42,7 +42,7 @@
                                 </li>
                             </ul>
                         </div>
-                    </f:security.ifAuthenticated>
+                    </f:security.ifHasRole>
                 </div>
             </div>
             <table class="table">

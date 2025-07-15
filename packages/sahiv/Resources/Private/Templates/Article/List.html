@@ -2,9 +2,10 @@
     <f:translate key="list" extensionName="sahiv" />
 </h5>
 
-<f:render partial="Filter/ArticleFilter.html" arguments="{_all}" />
-
-<f:render partial="Form/CreateLink.html" />
+<f:security.ifHasRole role="Admin">
+    <f:render partial="Filter/ArticleFilter.html" arguments="{_all}" />
+    <f:render partial="Form/CreateLink.html" />
+</f:security.ifHasRole>
 
 <div class="container-fluid my-2">
     <div class="row">

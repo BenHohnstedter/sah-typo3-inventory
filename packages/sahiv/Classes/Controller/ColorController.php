@@ -29,19 +29,11 @@ class ColorController extends ActionController
 
     public function newAction(): ResponseInterface
     {
-        if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
-        }
-
         return $this->htmlResponse();
     }
 
     public function createAction(Color $color): ResponseInterface
     {
-        if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
-        }
-
         $this->colorRepository->add($color);
 
         return $this->redirect('list');
@@ -49,23 +41,11 @@ class ColorController extends ActionController
 
     public function editAction(?Color $color = null): ResponseInterface
     {
-        if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
-        }
-
-        $this->view->assignMultiple([
-            'color' => $color,
-        ]);
-
         return $this->htmlResponse();
     }
 
     public function updateAction(Color $color): ResponseInterface
     {
-        if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
-        }
-
         $this->colorRepository->update($color);
 
         return $this->redirect('list');
@@ -73,10 +53,6 @@ class ColorController extends ActionController
 
     public function deleteAction(Color $color): ResponseInterface
     {
-        if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
-        }
-
         $this->colorRepository->remove($color);
 
         return $this->redirect('list');

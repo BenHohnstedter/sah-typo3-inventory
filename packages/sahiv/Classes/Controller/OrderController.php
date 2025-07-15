@@ -31,10 +31,6 @@ class OrderController extends ActionController
 
     public function newAction(): ResponseInterface
     {
-        if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
-        }
-
         $articles = $this->articleRepository->findBy(['archived' => 0,]);
 
         $this->view->assignMultiple([
@@ -46,10 +42,6 @@ class OrderController extends ActionController
 
     public function createAction(Order $order): ResponseInterface
     {
-        if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
-        }
-
         $this->orderRepository->add($order);
 
         return $this->redirect('list');
@@ -57,10 +49,6 @@ class OrderController extends ActionController
 
     public function editAction(?Order $order = null): ResponseInterface
     {
-        if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
-        }
-
         $articles = $this->articleRepository->findBy(['archived' => 0,]);
 
         $this->view->assignMultiple([
@@ -73,10 +61,6 @@ class OrderController extends ActionController
 
     public function updateAction(Order $order): ResponseInterface
     {
-        if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
-        }
-
         $this->orderRepository->update($order);
 
         return $this->redirect('list');
@@ -84,10 +68,6 @@ class OrderController extends ActionController
 
     public function deleteAction(Order $order): ResponseInterface
     {
-        if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
-        }
-
         $this->orderRepository->remove($order);
 
         return $this->redirect('list');

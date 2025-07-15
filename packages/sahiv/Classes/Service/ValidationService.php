@@ -14,9 +14,16 @@ class ValidationService
 
     public function validateFrontendUser(): bool
     {
-        return $this->context->getPropertyFromAspect(
+        $user = $this->context->getPropertyFromAspect(
             'frontend.user',
+            'groupNames',
             'isLoggedIn',
         );
+
+        if ($user[0] === 'Admin') {
+            return true;
+        }
+
+        return false;
     }
 }

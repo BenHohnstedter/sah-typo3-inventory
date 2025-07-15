@@ -29,19 +29,12 @@ class MaterialController extends ActionController
 
     public function newAction(): ResponseInterface
     {
-        if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
-        }
 
         return $this->htmlResponse();
     }
 
     public function createAction(Material $material): ResponseInterface
     {
-        if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
-        }
-
         $this->materialRepository->add($material);
 
         return $this->redirect('list');
@@ -49,10 +42,6 @@ class MaterialController extends ActionController
 
     public function editAction(?Material $material = null): ResponseInterface
     {
-        if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
-        }
-
         $this->view->assignMultiple([
             'material' => $material,
         ]);
@@ -62,10 +51,6 @@ class MaterialController extends ActionController
 
     public function updateAction(Material $material): ResponseInterface
     {
-        if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
-        }
-
         $this->materialRepository->update($material);
 
         return $this->redirect('list');
@@ -73,10 +58,6 @@ class MaterialController extends ActionController
 
     public function deleteAction(Material $material): ResponseInterface
     {
-        if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
-        }
-
         $this->materialRepository->remove($material);
 
         return $this->redirect('list');

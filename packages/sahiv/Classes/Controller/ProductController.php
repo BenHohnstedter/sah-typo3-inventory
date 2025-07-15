@@ -61,7 +61,7 @@ class ProductController extends ActionController
     public function detailAction(?Product $product = null): ResponseInterface
     {
         if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
+            return $this->redirectToUri('/403');
         }
 
         $this->dynamicFieldsService->setDynamicProductFields($product);
@@ -76,7 +76,7 @@ class ProductController extends ActionController
     public function newAction(): ResponseInterface
     {
         if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
+            return $this->redirectToUri('/403');
         }
 
         $types = $this->typeRepository->findBy(['is_type_for' => 1]);
@@ -95,7 +95,7 @@ class ProductController extends ActionController
     public function createAction(Product $product): ResponseInterface
     {
         if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
+            return $this->redirectToUri('/403');
         }
 
         $this->productRepository->add($product);
@@ -118,7 +118,7 @@ class ProductController extends ActionController
     public function editAction(?Product $product = null): ResponseInterface
     {
         if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
+            return $this->redirectToUri('/403');
         }
 
         $types = $this->typeRepository->findBy(['is_type_for' => 1]);
@@ -140,7 +140,7 @@ class ProductController extends ActionController
     public function updateAction(Product $product): ResponseInterface
     {
         if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
+            return $this->redirectToUri('/403');
         }
 
         $this->productRepository->update($product);
@@ -170,7 +170,7 @@ class ProductController extends ActionController
     public function deleteAction(Product $product): ResponseInterface
     {
         if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
+            return $this->redirectToUri('/403');
         }
 
         $this->productRepository->remove($product);

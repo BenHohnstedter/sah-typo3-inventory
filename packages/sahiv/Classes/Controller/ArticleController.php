@@ -60,7 +60,7 @@ class ArticleController extends ActionController
     public function detailAction(?Article $article = null): ResponseInterface
     {
         if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
+            return $this->redirectToUri('/403');
         }
 
         $this->dynamicFieldsService->setDynamicArticleFields($article);
@@ -75,7 +75,7 @@ class ArticleController extends ActionController
     public function newAction(): ResponseInterface
     {
         if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
+            return $this->redirectToUri('/403');
         }
 
         $types = $this->typeRepository->findBy(['is_type_for' => 0]);
@@ -94,7 +94,7 @@ class ArticleController extends ActionController
     public function createAction(Article $article): ResponseInterface
     {
         if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
+            return $this->redirectToUri('/403');
         }
 
         $this->articleRepository->add($article);
@@ -108,7 +108,7 @@ class ArticleController extends ActionController
     public function editAction(?Article $article = null): ResponseInterface
     {
         if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
+            return $this->redirectToUri('/403');
         }
 
         $types = $this->typeRepository->findBy(['is_type_for' => 0]);
@@ -128,7 +128,7 @@ class ArticleController extends ActionController
     public function updateAction(Article $article): ResponseInterface
     {
         if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
+            return $this->redirectToUri('/403');
         }
 
         $this->articleRepository->update($article);
@@ -143,7 +143,7 @@ class ArticleController extends ActionController
     public function deleteAction(Article $article): ResponseInterface
     {
         if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
+            return $this->redirectToUri('/403');
         }
 
         $article->setArchived(1);

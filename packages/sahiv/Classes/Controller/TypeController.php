@@ -29,19 +29,11 @@ class TypeController extends ActionController
 
     public function newAction(): ResponseInterface
     {
-        if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
-        }
-
         return $this->htmlResponse();
     }
 
     public function createAction(Type $type): ResponseInterface
     {
-        if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
-        }
-
         $this->typeRepository->add($type);
 
         return $this->redirect('list');
@@ -49,10 +41,6 @@ class TypeController extends ActionController
 
     public function editAction(?Type $type = null): ResponseInterface
     {
-        if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
-        }
-
         $this->view->assignMultiple([
             'type' => $type,
         ]);
@@ -62,10 +50,6 @@ class TypeController extends ActionController
 
     public function updateAction(Type $type): ResponseInterface
     {
-        if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
-        }
-
         $this->typeRepository->update($type);
 
         return $this->redirect('list');
@@ -73,10 +57,6 @@ class TypeController extends ActionController
 
     public function deleteAction(Type $type): ResponseInterface
     {
-        if (!$this->validationService->validateFrontendUser()) {
-            return $this->redirectToUri('https://sah-inventory.benh.dev');
-        }
-
         $this->typeRepository->remove($type);
 
         return $this->redirect('list');

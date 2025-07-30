@@ -6,6 +6,9 @@
             <trans-unit id="acronym" xml:space="preserve">
                 <source>Acronym</source>
             </trans-unit>
+            <trans-unit id="add_product_component" xml:space="preserve">
+                <target>add product component</target>
+            </trans-unit>
             <trans-unit id="bought_at" xml:space="preserve">
                 <source>Bought At</source>
             </trans-unit>

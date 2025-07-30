@@ -6,6 +6,9 @@
             <trans-unit id="acronym" xml:space="preserve">
                 <target>Kürzel</target>
             </trans-unit>
+            <trans-unit id="add_product_component" xml:space="preserve">
+                <target>Produktkomponenten hinzufügen</target>
+            </trans-unit>
             <trans-unit id="bought_at" xml:space="preserve">
                 <target>Kaufdatum</target>
             </trans-unit>

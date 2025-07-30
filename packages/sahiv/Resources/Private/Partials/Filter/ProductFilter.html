@@ -56,8 +56,9 @@
                                 <f:for each="{colors}" as="color">
                                     <div class="col-12 col-sm-6 col-md-3">
                                         <f:form.checkbox property="colors" class="form-check-input" value="{color.uid}"
-                                            multiple="1" label="color-{color.uid}" />
-                                        <label for="color-{color.uid}" class="form-check-label">{color.title}</label>
+                                            multiple="1" id="color-{color.uid}" />
+                                        <label for="color-{color.uid}"
+                                            class="form-check-label w-50">{color.title}</label>
                                     </div>
                                 </f:for>
                             </div>

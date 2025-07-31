@@ -1,0 +1,9 @@
+plugin {
+  tx_felogin_login {
+    view {
+      templateRootPath = EXT:sahfe/Resources/Private/Extensions/FeLogin/Templates/
+      partialRootPath = EXT:sahfe/Resources/Private/Extensions/FeLogin/Partials/
+      layoutRootPath = EXT:sahfe/Resources/Private/Extensions/FeLogin/Layouts/
+    }
+  }
+}

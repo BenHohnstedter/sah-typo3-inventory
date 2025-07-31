@@ -1,8 +1,11 @@
 :root {
     /* Global Colors */
-    --bs-primary-rgb: 68, 23, 82 !important; /* primary */
-    --bs-secondary-rgb: 247, 248, 249 !important; /* secondary */
-    --bs-body-color: #000!important; /* text color */
+    --bs-primary-rgb: 68, 23, 82 !important;
+    /* primary */
+    --bs-secondary-rgb: 247, 248, 249 !important;
+    /* secondary */
+    --bs-body-color: #000 !important;
+    /* text color */
 }
 
 body {
@@ -18,7 +21,8 @@ body {
     text-decoration: rgb(255, 255, 255) underline !important;
 }
 
-.dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active,
+.dropdown-item:active {
     text-decoration: none;
     background-color: inherit !important;
 }
@@ -52,10 +56,12 @@ body {
     border-radius: 10px;
 }
 
-.sah-container-one-to-one-aspect-ratio  {
+.sah-container-one-to-one-aspect-ratio {
     width: 100%;
-    padding-top: 100%; /* 1:1 Aspect Ratio */
-    position: relative; /* If you want text inside of it */
+    padding-top: 100%;
+    /* 1:1 Aspect Ratio */
+    position: relative;
+    /* If you want text inside of it */
 }
 
 .sah-content-one-to-one-aspect-ratio {

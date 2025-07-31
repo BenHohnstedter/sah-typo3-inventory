@@ -22,17 +22,5 @@ languages:
     fallbacks: '0'
     flag: en-us-gb
     languageId: 1
-  -
-    title: Dutch
-    enabled: true
-    locale: nl_NL
-    hreflang: ''
-    base: /nl/
-    websiteTitle: ''
-    navigationTitle: Nederlands
-    fallbackType: strict
-    fallbacks: '0'
-    flag: nl
-    languageId: 2
 rootPageId: 1
 websiteTitle: 'Soul Arthouse'

@@ -59,13 +59,14 @@
         <label for="product-size" class="form-label">
             <f:translate key="size" extensionName="sahiv" />
         </label>
-        <f:form.textfield type="number" property="size" class="form-control" id="product-size" />
+        <f:form.textfield type="number" property="size" class="form-control" id="product-size" step=".01" />
     </div>
     <div class="col-12 mb-3">
         <label for="product-selling_price" class="form-label">
             <f:translate key="selling_price" extensionName="sahiv" />
         </label>
-        <f:form.textfield type="number" property="sellingPrice" class="form-control" id="product-selling_price" />
+        <f:form.textfield type="number" property="sellingPrice" class="form-control" id="product-selling_price"
+            step=".01" />
     </div>
     <div class="col-12 mb-3">
         <label for="order-crafted_at" class="form-label">
@@ -77,7 +78,8 @@
         <label for="product-working_hours" class="form-label">
             <f:translate key="working_hours" extensionName="sahiv" />
         </label>
-        <f:form.textfield type="number" property="workingHours" class="form-control" id="product-working_hours" />
+        <f:form.textfield type="number" property="workingHours" class="form-control" id="product-working_hours"
+            step=".01" />
     </div>
     <div class="col-12 mb-3">
         <label for="product-notes" class="form-label">

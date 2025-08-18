@@ -78,3 +78,49 @@ CREATE TABLE tx_sahiv_domain_model_type (
     title varchar(255) DEFAULT '' NOT NULL,
     is_type_for tinyint DEFAULT 0 NOT NULL
 );
+
+#
+# Table structure for table 'tx_sahiv_domain_model_pearl'
+#
+CREATE TABLE tx_sahiv_domain_model_pearl (
+    title varchar(255) DEFAULT '' NOT NULL,
+    acronym varchar(255) DEFAULT '' NOT NULL,
+    images text,
+    price_per_unit DECIMAL(10,2) DEFAULT 0 NOT NULL,
+    stock int(11) DEFAULT 0 NOT NULL,
+    size DECIMAL(10,2) DEFAULT 0 NOT NULL,
+    colors int(11) DEFAULT 0 NOT NULL,
+    color_tones int(11) DEFAULT 0 NOT NULL,
+    materials int(11) DEFAULT 0 NOT NULL,
+    shapes int(11) DEFAULT 0 NOT NULL,
+    archived tinyint DEFAULT 0 NOT NULL,
+    deleted tinyint DEFAULT 0 NOT NULL
+);
+
+#
+# Table structure for table 'tx_sahiv_domain_model_colorcp'
+#
+CREATE TABLE tx_sahiv_domain_model_material_colorcp (
+    title varchar(255) DEFAULT '' NOT NULL
+);
+
+#
+# Table structure for table 'tx_sahiv_domain_model_colortone'
+#
+CREATE TABLE tx_sahiv_domain_model_color_tone (
+    title varchar(255) DEFAULT '' NOT NULL
+);
+
+#
+# Table structure for table 'tx_sahiv_domain_model_materialcp'
+#
+CREATE TABLE tx_sahiv_domain_model_materialcp (
+    title varchar(255) DEFAULT '' NOT NULL
+);
+
+#
+# Table structure for table 'tx_sahiv_domain_model_material_shape'
+#
+CREATE TABLE tx_sahiv_domain_model_material_shape (
+    title varchar(255) DEFAULT '' NOT NULL
+);

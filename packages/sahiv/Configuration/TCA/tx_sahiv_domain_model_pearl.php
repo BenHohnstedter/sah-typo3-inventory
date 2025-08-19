@@ -73,9 +73,9 @@ return [
 
 
 
-        'price_per_unit' => [
+        'unit_price' => [
             'exclude' => false,
-            'label' => $ll . $model . '.price_per_unit',
+            'label' => $ll . $model . '.unit_price',
             'config' => [
                 'type' => 'number',
                 'size' => 30,
@@ -130,7 +130,7 @@ return [
         ],
         'archived' => [
             'exclude' => true,
-            'label' => $ll . $model . '.title',
+            'label' => $ll . $model . '.archived',
             'config' => [
                 'type' => 'check',
                 'renderType' => 'checkboxToggle',
@@ -139,7 +139,7 @@ return [
         ],
         'deleted' => [
             'exclude' => true,
-            'label' => $ll . $model . '.title',
+            'label' => $ll . $model . '.deleted',
             'config' => [
                 'type' => 'check',
                 'renderType' => 'checkboxToggle',

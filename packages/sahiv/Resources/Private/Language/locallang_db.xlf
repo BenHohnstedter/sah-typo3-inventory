@@ -163,6 +163,40 @@
             <trans-unit id="tx_sahiv_domain_model_type.notes" xml:space="preserve">
                 <source>Notes</source>
             </trans-unit>
+
+            <trans-unit id="tx_sahiv_domain_model_pearl" xml:space="preserve">
+                <source>Pearl</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_pearl.title" xml:space="preserve">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_pearl.acronym" xml:space="preserve">
+                <source>Acronym</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_pearl.images" xml:space="preserve">
+                <source>Images</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_pearl.acronym" xml:space="preserve">
+                <source>Acronym</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_pearl.unit_price" xml:space="preserve">
+                <source>Unit Price</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_pearl.stock" xml:space="preserve">
+                <source>Stock</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_pearl.size" xml:space="preserve">
+                <source>Size</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_pearl.notes" xml:space="preserve">
+                <source>Notes</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_pearl.archived" xml:space="preserve">
+                <source>Archived</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_pearl.deleted" xml:space="preserve">
+                <source>Deleted</source>
+            </trans-unit>
 		</body>
 	</file>
 </xliff>

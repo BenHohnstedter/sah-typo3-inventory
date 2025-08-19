@@ -86,7 +86,7 @@ CREATE TABLE tx_sahiv_domain_model_pearl (
     title varchar(255) DEFAULT '' NOT NULL,
     acronym varchar(255) DEFAULT '' NOT NULL,
     images text,
-    price_per_unit DECIMAL(10,2) DEFAULT 0 NOT NULL,
+    unit_price DECIMAL(10,2) DEFAULT 0 NOT NULL,
     stock int(11) DEFAULT 0 NOT NULL,
     size DECIMAL(10,2) DEFAULT 0 NOT NULL,
     colors int(11) DEFAULT 0 NOT NULL,

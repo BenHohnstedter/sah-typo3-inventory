@@ -188,6 +188,18 @@
             <trans-unit id="tx_sahiv_domain_model_pearl.size" xml:space="preserve">
                 <source>Size</source>
             </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_pearl.colorscp" xml:space="preserve">
+                <source>Colors for Pearl</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_pearl.colortones" xml:space="preserve">
+                <source>Color Tones for Pearl</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_pearl.materialscp" xml:space="preserve">
+                <source>Materials for Pearl</source>
+            </trans-unit>
+                <trans-unit id="tx_sahiv_domain_model_pearl.materialscp" xml:space="preserve">
+                <source>Shapes for Pearl</source>
+            </trans-unit>
             <trans-unit id="tx_sahiv_domain_model_pearl.notes" xml:space="preserve">
                 <source>Notes</source>
             </trans-unit>
@@ -196,6 +208,46 @@
             </trans-unit>
             <trans-unit id="tx_sahiv_domain_model_pearl.deleted" xml:space="preserve">
                 <source>Deleted</source>
+            </trans-unit>
+
+            <trans-unit id="tx_sahiv_domain_model_colorcp" xml:space="preserve">
+                <source>Color for Charms and Pearls</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_colorcp.title" xml:space="preserve">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_colorcp.pearls" xml:space="preserve">
+                <source>Pearls for Color</source>
+            </trans-unit>
+
+            <trans-unit id="tx_sahiv_domain_model_colortone" xml:space="preserve">
+                <source>Color Tone for Charms and Pearls</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_colortone.title" xml:space="preserve">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_colortone.pearls" xml:space="preserve">
+                <source>Pearls for Color Tone</source>
+            </trans-unit>
+
+            <trans-unit id="tx_sahiv_domain_model_materialcp" xml:space="preserve">
+                <source>Material for Charms and Pearls</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_materialcp.title" xml:space="preserve">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_materialcp.pearls" xml:space="preserve">
+                <source>Pearls for Color Tone</source>
+            </trans-unit>
+
+            <trans-unit id="tx_sahiv_domain_model_shape" xml:space="preserve">
+                <source>Shape for Pearls</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_shape.title" xml:space="preserve">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_shape.pearls" xml:space="preserve">
+                <source>Pearls for Shape</source>
             </trans-unit>
 		</body>
 	</file>

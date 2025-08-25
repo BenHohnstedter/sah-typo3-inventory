@@ -120,6 +120,53 @@ return [
 
 
 
+        'colorscp' => [
+            'exclude' => true,
+            'label' => $ll . $model . '.colorscp',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectMultipleSideBySide',
+                'foreign_table' => 'tx_sahiv_domain_model_colorcp',
+                'MM' => 'tx_sahiv_pearls_colorscp_mm',
+                'maxitems' => 10,
+            ],
+        ],
+        'colortones' => [
+            'exclude' => true,
+            'label' => $ll . $model . '.colortones',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectMultipleSideBySide',
+                'foreign_table' => 'tx_sahiv_domain_model_colortone',
+                'MM' => 'tx_sahiv_pearls_colortones_mm',
+                'maxitems' => 10,
+            ],
+        ],
+        'materialscp' => [
+            'exclude' => true,
+            'label' => $ll . $model . '.materialscp',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectMultipleSideBySide',
+                'foreign_table' => 'tx_sahiv_domain_model_materialcp',
+                'MM' => 'tx_sahiv_pearls_materialscp_mm',
+                'maxitems' => 10,
+            ],
+        ],
+        'shapes' => [
+            'exclude' => true,
+            'label' => $ll . $model . '.shapes',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectMultipleSideBySide',
+                'foreign_table' => 'tx_sahiv_domain_model_shape',
+                'MM' => 'tx_sahiv_pearls_shapes_mm',
+                'maxitems' => 10,
+            ],
+        ],
+
+
+
         'notes' => [
             'label' => $ll . $model . '.notes',
             'config' => [
@@ -158,7 +205,7 @@ return [
     ],
     'types' => [
         0 => [
-            'showitem' => '--div--;General, --palette--;;palette_general, --palette--;;palette_numbers, --div--;Settings, notes, --palette--;;palette_settings',
+            'showitem' => '--div--;General, --palette--;;palette_general, --palette--;;palette_numbers, colorscp, colortones, materialscp, shapes, --div--;Settings, notes, --palette--;;palette_settings',
         ],
     ],
     'palettes' => [

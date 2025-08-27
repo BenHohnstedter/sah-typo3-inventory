@@ -3,12 +3,12 @@
 defined('TYPO3') or die;
 
 $ll = 'LLL:EXT:sahiv/Resources/Private/Language/locallang_db.xlf:';
+$model = 'tx_sahiv_domain_model_type';
 
 return [
     'ctrl' => [
-        'title' => $ll . 'tx_sahiv_domain_model_type',
+        'title' => $ll . $model,
         'label' => 'title',
-        'descriptionColumn' => 'notes',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'delete' => 'deleted',
@@ -17,13 +17,13 @@ return [
         'versioningWS' => true,
         'rootLevel' => -1,
         'typeicon_classes' => [
-            'default' => 'ext-sahiv-type',
+            'default' => 'ext-sahiv-color',
         ],
         'languageField' => 'sys_language_uid',
         'transOrigPointerField' => 'l10n_parent',
         'transOrigDiffSourceField' => 'l10n_diffsource',
         'translationSource' => 'l10n_source',
-        'searchFields' => 'title,description',
+        'searchFields' => 'title',
         'enablecolumns' => [
             'disabled' => 'hidden',
             'starttime' => 'starttime',
@@ -36,7 +36,7 @@ return [
     'columns' => [
         'title' => [
             'exclude' => false,
-            'label' => $ll . 'tx_sahiv_domain_model_type.title',
+            'label' => $ll . $model . '.title',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -44,30 +44,16 @@ return [
                 'eval' => 'unique,trim',
             ],
         ],
-        'is_type_for' => [
-            'exclude' => false,
-            'label' => $ll . 'tx_sahiv_domain_model_type.adjustment_type',
+        'charms' => [
+            'exclude' => true,
+            'label' => $ll . $model . '.charms',
             'config' => [
                 'type' => 'select',
-                'renderType' => 'selectSingle',
-                'items' => [
-                    [
-                        'label' => 'article',
-                        'value' => 0,
-                    ],
-                    [
-                        'label' => 'product',
-                        'value' => 1,
-                    ],
-                ],
-            ],
-        ],
-        'notes' => [
-            'label' => $ll . 'tx_sahiv_domain_model_type.notes',
-            'config' => [
-                'type' => 'text',
-                'rows' => 10,
-                'cols' => 48,
+                'renderType' => 'selectMultipleSideBySide',
+                'foreign_table' => 'tx_sahiv_domain_model_charm',
+                'MM' => 'tx_sahiv_charms_types_mm',
+                'MM_opposite_field' => 'charms',
+                'maxitems' => 10,
             ],
         ],
         'hidden' => [
@@ -82,12 +68,15 @@ return [
     ],
     'types' => [
         0 => [
-            'showitem' => '--div--;General, --palette--;;palette_general,--div--;Settings, notes, hidden',
+            'showitem' => '--div--;General, --palette--;;palette_general, charms, --palette--;;palette_settings',
         ],
     ],
     'palettes' => [
         'palette_general' => [
-            'showitem' => 'title, is_type_for',
+            'showitem' => 'title',
+        ],
+        'palette_settings' => [
+            'showitem' => 'hidden',
         ],
     ],
 ];

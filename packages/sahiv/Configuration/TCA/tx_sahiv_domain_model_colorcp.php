@@ -44,6 +44,18 @@ return [
                 'eval' => 'unique,trim',
             ],
         ],
+        'charms' => [
+            'exclude' => true,
+            'label' => $ll . $model . '.charms',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectMultipleSideBySide',
+                'foreign_table' => 'tx_sahiv_domain_model_charm',
+                'MM' => 'tx_sahiv_charms_colorscp_mm',
+                'MM_opposite_field' => 'charms',
+                'maxitems' => 10,
+            ],
+        ],
         'pearls' => [
             'exclude' => true,
             'label' => $ll . $model . '.pearls',
@@ -68,7 +80,7 @@ return [
     ],
     'types' => [
         0 => [
-            'showitem' => '--div--;General, --palette--;;palette_general, pearls, --palette--;;palette_settings',
+            'showitem' => '--div--;General, --palette--;;palette_general, charms, pearls, --palette--;;palette_settings',
         ],
     ],
     'palettes' => [

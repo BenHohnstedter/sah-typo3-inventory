@@ -3,7 +3,7 @@
 defined('TYPO3') or die;
 
 $ll = 'LLL:EXT:sahiv/Resources/Private/Language/locallang_db.xlf:';
-$model = 'tx_sahiv_domain_model_pearl';
+$model = 'tx_sahiv_domain_model_charm';
 
 return [
     'ctrl' => [
@@ -41,16 +41,6 @@ return [
                 'size' => 30,
                 'required' => true,
                 'eval' => 'unique,trim',
-            ],
-        ],
-        'acronym' => [
-            'exclude' => false,
-            'label' => $ll . $model . '.acronym',
-            'config' => [
-                'type' => 'input',
-                'size' => 30,
-                'required' => false,
-                'eval' => 'trim',
             ],
         ],
         'images' => [
@@ -106,15 +96,10 @@ return [
             'exclude' => false,
             'label' => $ll . $model . '.size',
             'config' => [
-                'type' => 'number',
+                'type' => 'input',
                 'size' => 30,
-                'format' => 'decimal',
                 'required' => false,
-                'eval' => 'trim',
-                'range' => [
-                    'lower' => 0,
-                    'upper' => 99999,
-                ],
+                'eval' => 'unique,trim',
             ],
         ],
 
@@ -127,7 +112,7 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
                 'foreign_table' => 'tx_sahiv_domain_model_colorcp',
-                'MM' => 'tx_sahiv_pearls_colorscp_mm',
+                'MM' => 'tx_sahiv_charms_colorscp_mm',
                 'maxitems' => 10,
             ],
         ],
@@ -138,7 +123,7 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
                 'foreign_table' => 'tx_sahiv_domain_model_colortone',
-                'MM' => 'tx_sahiv_pearls_colortones_mm',
+                'MM' => 'tx_sahiv_charms_colortones_mm',
                 'maxitems' => 10,
             ],
         ],
@@ -149,19 +134,29 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
                 'foreign_table' => 'tx_sahiv_domain_model_materialcp',
-                'MM' => 'tx_sahiv_pearls_materialscp_mm',
+                'MM' => 'tx_sahiv_charms_materialscp_mm',
                 'maxitems' => 10,
             ],
         ],
-        'shapes' => [
+        'types' => [
             'exclude' => true,
-            'label' => $ll . $model . '.shapes',
+            'label' => $ll . $model . '.types',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
                 'foreign_table' => 'tx_sahiv_domain_model_shape',
-                'MM' => 'tx_sahiv_pearls_shapes_mm',
+                'MM' => 'tx_sahiv_charms_types_mm',
                 'maxitems' => 10,
+            ],
+        ],
+
+        'selfmade' => [
+            'exclude' => true,
+            'label' => $ll . $model . '.selfmade',
+            'config' => [
+                'type' => 'check',
+                'renderType' => 'checkboxToggle',
+                'default' => 0,
             ],
         ],
 
@@ -205,12 +200,12 @@ return [
     ],
     'types' => [
         0 => [
-            'showitem' => '--div--;General, --palette--;;palette_general, --palette--;;palette_numbers, colorscp, colortones, materialscp, shapes, --div--;Settings, notes, --palette--;;palette_settings',
+            'showitem' => '--div--;General, --palette--;;palette_general, --palette--;;palette_numbers, colorscp, colortones, materialscp, types, selfmade, --div--;Settings, notes, --palette--;;palette_settings',
         ],
     ],
     'palettes' => [
         'palette_general' => [
-            'showitem' => 'title, acronym, images',
+            'showitem' => 'title, images',
         ],
         'palette_numbers' => [
             'showitem' => 'unit_price, stock, size',

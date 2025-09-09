@@ -44,16 +44,6 @@ return [
                 'eval' => 'unique,trim',
             ],
         ],
-        'article' => [
-            'exclude' => false,
-            'label' => $ll . 'tx_sahiv_domain_model_order.article',
-            'config' => [
-                'type' => 'select',
-                'required' => true,
-                'renderType' => 'selectSingle',
-                'foreign_table' => 'tx_sahiv_domain_model_article',
-            ],
-        ],
         'pack_amount' => [
             'displayCond' => 'FIELD:is_only_adjustment:=:0',
             'exclude' => false,

@@ -77,16 +77,6 @@ return [
                 'default' => 0,
             ],
         ],
-        'type' => [
-            'exclude' => false,
-            'label' => $ll . 'tx_sahiv_domain_model_product.type',
-            'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'foreign_table' => 'tx_sahiv_domain_model_type',
-                'foreign_table_where' => 'AND tx_sahiv_domain_model_type.is_type_for = 1',
-            ],
-        ],
         'colors' => [
             'exclude' => true,
             'label' => $ll . 'tx_sahiv_domain_model_product.colors',

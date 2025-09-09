@@ -10,15 +10,7 @@ mod.wizards.newContentElement.wizardItems {
         description = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_colorlist.description
         tt_content_defValues {
           CType = list
-          list_type = sahiv_articlelist
-        }
-      }
-      sahiv_articlelist {
-        title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_articlelist.title
-        description = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_articlelist.description
-        tt_content_defValues {
-          CType = list
-          list_type = sahiv_articlelist
+          list_type = sahiv_colorlist
         }
       }
       sahiv_materiallist {

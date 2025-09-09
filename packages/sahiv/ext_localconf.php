@@ -13,13 +13,6 @@ use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 defined('TYPO3') or die();
 
 ExtensionUtility::configurePlugin(
-    'sahiv',
-    'ArticleList',
-    [ArticleController::class => 'list, new, create, edit, update, delete, detail'],
-    [ArticleController::class => 'list, new, create, edit, update, delete, detail'],
-);
-
-ExtensionUtility::configurePlugin(
     // extension name, matching the PHP namespaces (but without the vendor)
     'sahiv',
     // arbitrary, but unique plugin name (not visible in the backend)

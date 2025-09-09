@@ -16,10 +16,10 @@ class ColorcpController extends ActionController
 
     public function listAction(): ResponseInterface
     {
-        $colorcps = $this->colorcpRepository->findAll();
+        $colorscp = $this->colorcpRepository->findAll();
 
         $this->view->assignMultiple([
-            'colorcps' => $colorcps,
+            'colorscp' => $colorscp,
         ]);
 
         return $this->htmlResponse();

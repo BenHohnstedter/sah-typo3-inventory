@@ -7,7 +7,7 @@ namespace benh\sahiv\Domain\Repository;
 use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 use TYPO3\CMS\Extbase\Persistence\Repository;
 
-class MaterialcpRepository extends Repository
+class ShapeRepository extends Repository
 {
     protected $defaultOrderings = [
         'title' => QueryInterface::ORDER_ASCENDING,

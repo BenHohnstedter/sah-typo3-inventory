@@ -8,5 +8,7 @@ use TYPO3\CMS\Extbase\Persistence\Repository;
 
 class TypeRepository extends Repository
 {
-
+    protected $defaultOrderings = [
+        'title' => QueryInterface::ORDER_ASCENDING,
+    ];
 }

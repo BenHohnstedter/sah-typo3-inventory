@@ -125,9 +125,6 @@
             <trans-unit id="tx_sahiv_domain_model_product.working_hours" xml:space="preserve">
                 <source>Working Hours</source>
             </trans-unit>
-            <trans-unit id="tx_sahiv_domain_model_product.type" xml:space="preserve">
-                <source>Product Type</source>
-            </trans-unit>
             <trans-unit id="tx_sahiv_domain_model_product.crafted_at" xml:space="preserve">
                 <source>Crafted At</source>
             </trans-unit>
@@ -226,8 +223,8 @@
             <trans-unit id="tx_sahiv_domain_model_charm.materialscp" xml:space="preserve">
                 <source>Materials for Charm</source>
             </trans-unit>
-                <trans-unit id="tx_sahiv_domain_model_charm.types" xml:space="preserve">
-                <source>Types for Charm</source>
+                <trans-unit id="tx_sahiv_domain_model_charm.themes" xml:space="preserve">
+                <source>Themes for Charm</source>
             </trans-unit>
                 <trans-unit id="tx_sahiv_domain_model_charm.selfmade" xml:space="preserve">
                 <source>Selfmade</source>
@@ -291,14 +288,24 @@
                 <source>Pearls for Shape</source>
             </trans-unit>
 
+            <trans-unit id="tx_sahiv_domain_model_theme" xml:space="preserve">
+                <source>Theme for Charm</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_theme.title" xml:space="preserve">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_sahiv_domain_model_theme.charms" xml:space="preserve">
+                <source>Charms for Theme</source>
+            </trans-unit>
+
             <trans-unit id="tx_sahiv_domain_model_type" xml:space="preserve">
-                <source>Type for Charm</source>
+                <source>Type for Accessory</source>
             </trans-unit>
             <trans-unit id="tx_sahiv_domain_model_type.title" xml:space="preserve">
                 <source>Title</source>
             </trans-unit>
             <trans-unit id="tx_sahiv_domain_model_type.charms" xml:space="preserve">
-                <source>Charms for Type</source>
+                <source>Accessory for Type</source>
             </trans-unit>
 		</body>
 	</file>

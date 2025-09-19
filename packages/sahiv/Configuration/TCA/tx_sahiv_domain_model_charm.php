@@ -140,12 +140,12 @@ return [
         ],
         'types' => [
             'exclude' => true,
-            'label' => $ll . $model . '.types',
+            'label' => $ll . $model . '.themes',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
                 'foreign_table' => 'tx_sahiv_domain_model_shape',
-                'MM' => 'tx_sahiv_charms_types_mm',
+                'MM' => 'tx_sahiv_charms_themes_mm',
                 'maxitems' => 10,
             ],
         ],
@@ -200,7 +200,7 @@ return [
     ],
     'types' => [
         0 => [
-            'showitem' => '--div--;General, --palette--;;palette_general, --palette--;;palette_numbers, colorscp, colortones, materialscp, types, selfmade, --div--;Settings, notes, --palette--;;palette_settings',
+            'showitem' => '--div--;General, --palette--;;palette_general, --palette--;;palette_numbers, colorscp, colortones, materialscp, themes, selfmade, --div--;Settings, notes, --palette--;;palette_settings',
         ],
     ],
     'palettes' => [

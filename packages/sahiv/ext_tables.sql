@@ -10,7 +10,7 @@ CREATE TABLE tx_sahiv_domain_model_order (
     shop_name varchar(255) DEFAULT '' NOT NULL,
     shop_link varchar(255) DEFAULT '' NOT NULL,
     is_only_adjustment tinyint DEFAULT 0 NOT NULL,
-    adjustment_type tinyint DEFAULT 0 NOT NULL
+    adjustment_theme tinyint DEFAULT 0 NOT NULL
 );
 
 #
@@ -73,8 +73,25 @@ CREATE TABLE tx_sahiv_domain_model_charm (
     colorscp int(11) DEFAULT 0 NOT NULL,
     colortones int(11) DEFAULT 0 NOT NULL,
     materialscp int(11) DEFAULT 0 NOT NULL,
-    types int(11) DEFAULT 0 NOT NULL,
+    themes int(11) DEFAULT 0 NOT NULL,
     selfmade tinyint DEFAULT 0 NOT NULL,
+    archived tinyint DEFAULT 0 NOT NULL,
+    deleted tinyint DEFAULT 0 NOT NULL
+);
+
+#
+# Table structure for table 'tx_sahiv_domain_model_accessory'
+#
+CREATE TABLE tx_sahiv_domain_model_accessory (
+    title varchar(255) DEFAULT '' NOT NULL,
+    images text,
+    unit_price DECIMAL(10,2) DEFAULT 0 NOT NULL,
+    stock int(11) DEFAULT 0 NOT NULL,
+    size varchar(255) DEFAULT '' NOT NULL,
+    colorscp int(11) DEFAULT 0 NOT NULL,
+    colortones int(11) DEFAULT 0 NOT NULL,
+    materialscp int(11) DEFAULT 0 NOT NULL,
+    type int(11) DEFAULT 0 NOT NULL,
     archived tinyint DEFAULT 0 NOT NULL,
     deleted tinyint DEFAULT 0 NOT NULL
 );
@@ -115,9 +132,9 @@ CREATE TABLE tx_sahiv_domain_model_shape (
 );
 
 #
-# Table structure for table 'tx_sahiv_domain_model_type'
+# Table structure for table 'tx_sahiv_domain_model_theme'
 #
-CREATE TABLE tx_sahiv_domain_model_type (
+CREATE TABLE tx_sahiv_domain_model_theme (
     title varchar(255) DEFAULT '' NOT NULL,
     charms int(11) DEFAULT 0 NOT NULL,
 );

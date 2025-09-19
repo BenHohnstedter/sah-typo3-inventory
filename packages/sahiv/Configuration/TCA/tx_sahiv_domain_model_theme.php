@@ -3,7 +3,7 @@
 defined('TYPO3') or die;
 
 $ll = 'LLL:EXT:sahiv/Resources/Private/Language/locallang_db.xlf:';
-$model = 'tx_sahiv_domain_model_type';
+$model = 'tx_sahiv_domain_model_theme';
 
 return [
     'ctrl' => [
@@ -51,7 +51,7 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
                 'foreign_table' => 'tx_sahiv_domain_model_charm',
-                'MM' => 'tx_sahiv_charms_types_mm',
+                'MM' => 'tx_sahiv_charms_themes_mm',
                 'MM_opposite_field' => 'charms',
                 'maxitems' => 10,
             ],

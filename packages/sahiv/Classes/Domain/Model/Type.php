@@ -1,58 +1,52 @@
 <?php
 
-namespace benh\sahiv\Controller;
+namespace benh\sahiv\Domain\Model;
 
-use benh\sahiv\Domain\Model\Type;
-use benh\sahiv\Domain\Repository\TypeRepository;
-use Psr\Http\Message\ResponseInterface;
-use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
+use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 
-class TypeController extends ActionController
+class Type extends AbstractEntity
 {
-    public function __construct(
-        protected TypeRepository $typeRepository,
-    ) {
+    /**
+     * @var string
+     */
+    protected string $title = '';
+
+    /**
+     * @var bool
+     */
+    protected bool $hidden = false;
+
+    /**
+     * @return string
+     */
+    public function getTitle(): string
+    {
+        return $this->title;
     }
 
-    public function listAction(): ResponseInterface
+    /**
+     * @param string $title
+     * @return void
+     */
+    public function setTitle(string $title): void
     {
-        $types = $this->typeRepository->findAll();
-
-        $this->view->assignMultiple([
-            'types' => $types,
-        ]);
-
-        return $this->htmlResponse();
+        $this->title = $title;
     }
 
-    public function newAction(): ResponseInterface
+    /**
+     * @return bool
+     */
+    public function isHidden(): bool
     {
-        return $this->htmlResponse();
+        return $this->hidden;
     }
 
-    public function createAction(Type $type): ResponseInterface
+    /**
+     * @param bool $hidden
+     * @return void
+     */
+    public function setHidden(bool $hidden): void
     {
-        $this->typeRepository->add($type);
-
-        return $this->redirect('list');
-    }
-
-    public function editAction(?Type $type = null): ResponseInterface
-    {
-        return $this->htmlResponse();
-    }
-
-    public function updateAction(Type $type): ResponseInterface
-    {
-        $this->typeRepository->update($type);
-
-        return $this->redirect('list');
-    }
-
-    public function deleteAction(Type $type): ResponseInterface
-    {
-        $this->typeRepository->remove($type);
-
-        return $this->redirect('list');
+        $this->hidden = $hidden;
     }
 }

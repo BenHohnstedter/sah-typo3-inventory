@@ -4,14 +4,12 @@ namespace benh\sahiv\Controller;
 
 use benh\sahiv\Domain\Model\Type;
 use benh\sahiv\Domain\Repository\TypeRepository;
-use benh\sahiv\Service\ValidationService;
 use Psr\Http\Message\ResponseInterface;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 class TypeController extends ActionController
 {
     public function __construct(
-        protected ValidationService $validationService,
         protected TypeRepository $typeRepository,
     ) {
     }
@@ -41,10 +39,6 @@ class TypeController extends ActionController
 
     public function editAction(?Type $type = null): ResponseInterface
     {
-        $this->view->assignMultiple([
-            'type' => $type,
-        ]);
-
         return $this->htmlResponse();
     }
 

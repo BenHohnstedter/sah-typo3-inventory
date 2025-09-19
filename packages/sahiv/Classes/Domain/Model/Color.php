@@ -6,35 +6,47 @@ use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 
 class Color extends AbstractEntity
 {
-    /** @var string */
-    protected $title = '';
+    /**
+     * @var string
+     */
+    protected string $title = '';
 
-    /** @var string */
-    protected $notes = '';
+    /**
+     * @var bool
+     */
+    protected bool $hidden = false;
 
+    /**
+     * @return string
+     */
     public function getTitle(): string
     {
         return $this->title;
     }
 
     /**
-     * @param string $title title
+     * @param string $title
+     * @return void
      */
-    public function setTitle($title): void
+    public function setTitle(string $title): void
     {
         $this->title = $title;
     }
 
-    public function getNotes(): string
+    /**
+     * @return bool
+     */
+    public function isHidden(): bool
     {
-        return $this->notes;
+        return $this->hidden;
     }
 
     /**
-     * @param string $notes notes
+     * @param bool $hidden
+     * @return void
      */
-    public function setNotes($notes): void
+    public function setHidden(bool $hidden): void
     {
-        $this->notes = $notes;
+        $this->hidden = $hidden;
     }
 }

@@ -3,12 +3,12 @@
 defined('TYPO3') or die;
 
 $ll = 'LLL:EXT:sahiv/Resources/Private/Language/locallang_db.xlf:';
+$model = 'tx_sahiv_domain_model_color';
 
 return [
     'ctrl' => [
-        'title' => $ll . 'tx_sahiv_domain_model_color',
+        'title' => $ll . $model,
         'label' => 'title',
-        'descriptionColumn' => 'notes',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'delete' => 'deleted',
@@ -23,45 +23,32 @@ return [
         'transOrigPointerField' => 'l10n_parent',
         'transOrigDiffSourceField' => 'l10n_diffsource',
         'translationSource' => 'l10n_source',
-        'searchFields' => 'title,description',
+        'searchFields' => 'title',
         'enablecolumns' => [
             'disabled' => 'hidden',
-            'starttime' => 'starttime',
-            'endtime' => 'endtime',
-        ],
-        'security' => [
-            'ignorePageTypeRestriction' => true,
         ],
     ],
     'columns' => [
         'title' => [
             'exclude' => false,
-            'label' => $ll . 'tx_sahiv_domain_model_color.title',
+            'label' => $ll . $model . '.title',
             'config' => [
                 'type' => 'input',
-                'size' => 30,
+                'size' => 50,
                 'required' => true,
-                'eval' => 'unique,trim',
+                'eval' => 'trim',
             ],
         ],
-        'articles' => [
+        'accessories' => [
             'exclude' => true,
-            'label' => $ll . 'tx_sahiv_domain_model_color.articles',
+            'label' => $ll . $model . '.accessories',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
-                'foreign_table' => 'tx_sahiv_domain_model_article',
-                'MM' => 'tx_sahiv_articles_colors_mm',
-                'MM_opposite_field' => 'articles',
-                'maxitems' => 50,
-            ],
-        ],
-        'notes' => [
-            'label' => $ll . 'tx_sahiv_domain_model_color.notes',
-            'config' => [
-                'type' => 'text',
-                'rows' => 10,
-                'cols' => 48,
+                'foreign_table' => 'tx_sahiv_domain_model_accessory',
+                'MM' => 'tx_sahiv_accessories_colors_mm',
+                'MM_opposite_field' => 'colors',
+                'maxitems' => 9999,
             ],
         ],
         'hidden' => [
@@ -76,7 +63,7 @@ return [
     ],
     'types' => [
         0 => [
-            'showitem' => '--div--;General, title, articles, --div--;Settings, notes, hidden',
+            'showitem' => '--div--;General, title, accessories, --div--;Settings, hidden',
         ],
     ],
 ];

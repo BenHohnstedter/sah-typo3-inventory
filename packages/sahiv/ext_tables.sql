@@ -41,8 +41,6 @@ CREATE TABLE tx_sahiv_domain_model_productcomponent (
     PRIMARY KEY (uid)
 );
 
-
-
 #
 # Table structure for table 'tx_sahiv_domain_model_pearl'
 #
@@ -88,9 +86,8 @@ CREATE TABLE tx_sahiv_domain_model_accessory (
     unit_price DECIMAL(10,2) DEFAULT 0 NOT NULL,
     stock int(11) DEFAULT 0 NOT NULL,
     size varchar(255) DEFAULT '' NOT NULL,
-    colorscp int(11) DEFAULT 0 NOT NULL,
-    colortones int(11) DEFAULT 0 NOT NULL,
-    materialscp int(11) DEFAULT 0 NOT NULL,
+    colors int(11) DEFAULT 0 NOT NULL,
+    material int(11) DEFAULT 0 NOT NULL,
     type int(11) DEFAULT 0 NOT NULL,
     archived tinyint DEFAULT 0 NOT NULL,
     deleted tinyint DEFAULT 0 NOT NULL
@@ -139,8 +136,6 @@ CREATE TABLE tx_sahiv_domain_model_theme (
     charms int(11) DEFAULT 0 NOT NULL,
 );
 
-# FOR Accessory DATA
-
 #
 # Table structure for table 'tx_sahiv_domain_model_color'
 #
@@ -154,4 +149,12 @@ CREATE TABLE tx_sahiv_domain_model_color (
 #
 CREATE TABLE tx_sahiv_domain_model_material (
     title varchar(255) DEFAULT '' NOT NULL
+);
+
+#
+# Table structure for table 'tx_sahiv_domain_model_type'
+#
+CREATE TABLE tx_sahiv_domain_model_type (
+    title varchar(255) DEFAULT '' NOT NULL,
+    articles int(11) DEFAULT 0 NOT NULL
 );

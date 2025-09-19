@@ -3,12 +3,12 @@
 defined('TYPO3') or die;
 
 $ll = 'LLL:EXT:sahiv/Resources/Private/Language/locallang_db.xlf:';
+$model = 'tx_sahiv_domain_model_material';
 
 return [
     'ctrl' => [
-        'title' => $ll . 'tx_sahiv_domain_model_material',
+        'title' => $ll . $model,
         'label' => 'title',
-        'descriptionColumn' => 'notes',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'delete' => 'deleted',
@@ -23,33 +23,20 @@ return [
         'transOrigPointerField' => 'l10n_parent',
         'transOrigDiffSourceField' => 'l10n_diffsource',
         'translationSource' => 'l10n_source',
-        'searchFields' => 'title,description',
+        'searchFields' => 'title',
         'enablecolumns' => [
             'disabled' => 'hidden',
-            'starttime' => 'starttime',
-            'endtime' => 'endtime',
-        ],
-        'security' => [
-            'ignorePageTypeRestriction' => true,
         ],
     ],
     'columns' => [
         'title' => [
             'exclude' => false,
-            'label' => $ll . 'tx_sahiv_domain_model_material.title',
+            'label' => $ll . $model . '.title',
             'config' => [
                 'type' => 'input',
-                'size' => 30,
+                'size' => 50,
                 'required' => true,
-                'eval' => 'unique,trim',
-            ],
-        ],
-        'notes' => [
-            'label' => $ll . 'tx_sahiv_domain_model_material.notes',
-            'config' => [
-                'type' => 'text',
-                'rows' => 10,
-                'cols' => 48,
+                'eval' => 'trim',
             ],
         ],
         'hidden' => [
@@ -64,7 +51,7 @@ return [
     ],
     'types' => [
         0 => [
-            'showitem' => '--div--;General, title, --div--;Settings, notes, hidden',
+            'showitem' => 'title, hidden',
         ],
     ],
 ];

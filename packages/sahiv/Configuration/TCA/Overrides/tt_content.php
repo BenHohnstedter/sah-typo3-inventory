@@ -6,36 +6,36 @@ defined('TYPO3') or die();
 
 ExtensionUtility::registerPlugin(
     'sahiv',
-    'ColorList',
-    'Color List',
+    'ColorPlugin',
+    'Color Plugin',
 );
 
 ExtensionUtility::registerPlugin(
     'sahiv',
-    'ArticleList',
-    'Article List',
+    'ArticlePlugin',
+    'Article Plugin',
 );
 
 ExtensionUtility::registerPlugin(
     'sahiv',
-    'MaterialList',
-    'Material List',
+    'MaterialPlugin',
+    'Material Plugin',
 );
 
 ExtensionUtility::registerPlugin(
     'sahiv',
-    'OrderList',
-    'Order List',
+    'OrderPlugin',
+    'Order Plugin',
 );
 
 ExtensionUtility::registerPlugin(
     'sahiv',
-    'ProductList',
-    'Product List',
+    'ProductPlugin',
+    'Product Plugin',
 );
 
 ExtensionUtility::registerPlugin(
     'sahiv',
-    'TypeList',
-    'Type List',
+    'TypePlugin',
+    'Type Plugin',
 );

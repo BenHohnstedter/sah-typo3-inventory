@@ -16,7 +16,7 @@ ExtensionUtility::configurePlugin(
     // extension name, matching the PHP namespaces (but without the vendor)
     'sahiv',
     // arbitrary, but unique plugin name (not visible in the backend)
-    'ColorList',
+    'ColorPlugin',
     // all actions
     [ColorController::class => 'list, new, create, edit, update, delete'],
     // non-cacheable actions
@@ -25,28 +25,28 @@ ExtensionUtility::configurePlugin(
 
 ExtensionUtility::configurePlugin(
     'sahiv',
-    'MaterialList',
+    'MaterialPlugin',
     [MaterialController::class => 'list, new, create, edit, update, delete'],
     [MaterialController::class => 'list, new, create, edit, update, delete'],
 );
 
 ExtensionUtility::configurePlugin(
     'sahiv',
-    'OrderList',
+    'OrderPlugin',
     [OrderController::class => 'list, new, create, edit, update, delete'],
     [OrderController::class => 'list, new, create, edit, update, delete'],
 );
 
 ExtensionUtility::configurePlugin(
     'sahiv',
-    'ProductList',
+    'ProductPlugin',
     [ProductController::class => 'list, new, create, edit, update, delete, detail'],
     [ProductController::class => 'list, new, create, edit, update, delete, detail'],
 );
 
 ExtensionUtility::configurePlugin(
     'sahiv',
-    'TypeList',
+    'TypePlugin',
     [TypeController::class => 'list, new, create, edit, update, delete'],
     [TypeController::class => 'list, new, create, edit, update, delete'],
 );

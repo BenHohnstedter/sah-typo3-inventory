@@ -1,48 +1,61 @@
 mod.wizards.newContentElement.wizardItems {
-  // add the content elements to the tab "plugins"
   sahiv {
     after = plugins
     header = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv
     show = *
     elements {
-      sahiv_colorlist {
-        title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_colorlist.title
-        description = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_colorlist.description
+      sahiv_color {
+        iconIdentifier = sahiv-plugin-color
+        title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_color.title
+        description = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_color.description
         tt_content_defValues {
           CType = list
-          list_type = sahiv_colorlist
+          list_type = sahiv_colorplugin
         }
       }
-      sahiv_materiallist {
-        title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_materiallist.title
-        description = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_materiallist.description
+      sahiv_colortone {
+        iconIdentifier = sahiv-plugin-colortone
+        title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_colortone.title
+        description = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_colortone.description
         tt_content_defValues {
           CType = list
-          list_type = sahiv_materiallist
+          list_type = sahiv_colortoneplugin
         }
       }
-      sahiv_orderlist {
-        title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_orderlist.title
-        description = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_orderlist.description
+      sahiv_material {
+        iconIdentifier = sahiv-plugin-material
+        title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_material.title
+        description = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_material.description
         tt_content_defValues {
           CType = list
-          list_type = sahiv_orderlist
+          list_type = sahiv_materialplugin
         }
       }
-      sahiv_productlist {
-        title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_productlist.title
-        description = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_productlist.description
+      sahiv_order {
+        iconIdentifier = sahiv-plugin-order
+        title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_order.title
+        description = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_order.description
         tt_content_defValues {
           CType = list
-          list_type = sahiv_productlist
+          list_type = sahiv_orderplugin
         }
       }
-      sahiv_typelist {
-        title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_typelist.title
-        description = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_typelist.description
+      sahiv_product {
+        iconIdentifier = sahiv-plugin-product
+        title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_product.title
+        description = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_product.description
         tt_content_defValues {
           CType = list
-          list_type = sahiv_typelist
+          list_type = sahiv_productplugin
+        }
+      }
+      sahiv_type {
+        iconIdentifier = sahiv-plugin-type
+        title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_type.title
+        description = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_type.description
+        tt_content_defValues {
+          CType = list
+          list_type = sahiv_typeplugin
         }
       }
     }

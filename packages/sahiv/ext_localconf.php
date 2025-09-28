@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 use benh\sahiv\Controller\ColorController;
-use benh\sahiv\Controller\ArticleController;
+use benh\sahiv\Controller\ColortoneController;
 use benh\sahiv\Controller\MaterialController;
 use benh\sahiv\Controller\OrderController;
 use benh\sahiv\Controller\ProductController;
@@ -13,14 +13,17 @@ use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 defined('TYPO3') or die();
 
 ExtensionUtility::configurePlugin(
-    // extension name, matching the PHP namespaces (but without the vendor)
+    'sahiv',                                                                // extension name, matching the PHP namespaces (but without the vendor)
+    'ColorPlugin',                                                          // arbitrary, but unique plugin name (not visible in the backend)
+    [ColorController::class => 'list, new, create, edit, update, delete'],  // all actions
+    [ColorController::class => 'list, new, create, edit, update, delete'],  // non-cacheable actions
+);
+
+ExtensionUtility::configurePlugin(
     'sahiv',
-    // arbitrary, but unique plugin name (not visible in the backend)
-    'ColorPlugin',
-    // all actions
-    [ColorController::class => 'list, new, create, edit, update, delete'],
-    // non-cacheable actions
-    [ColorController::class => 'list, new, create, edit, update, delete'],
+    'ColortonePlugin',
+    [ColortoneController::class => 'list, new, create, edit, update, delete'],
+    [ColortoneController::class => 'list, new, create, edit, update, delete'],
 );
 
 ExtensionUtility::configurePlugin(

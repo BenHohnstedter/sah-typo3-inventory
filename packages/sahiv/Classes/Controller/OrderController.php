@@ -14,7 +14,7 @@ class OrderController extends ActionController
     public function __construct(
         protected ValidationService $validationService,
         protected OrderRepository $orderRepository,
-        protected ArticleRepository $articleRepository,
+        // protected ArticleRepository $articleRepository,
     ) {
     }
 

@@ -1,56 +1,59 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2025-02-13T11:00:00Z" product-name="sahiv">
+    <file source-language="en" datatype="plaintext" original="messages" date="2025-09-28T11:00:00Z" product-name="sahiv">
         <header/>
         <body>
-			<trans-unit id="plugin.sahiv_articlelist.test_text" xml:space="preserve">
-				<source>This is a text for testing.</source>
-			</trans-unit>
-
-			<trans-unit id="plugin.sahiv" xml:space="preserve">
-                <source>Lagerverwaltung</source>
+            <!-- Backend Tab -->
+            <trans-unit id="plugin.sahiv" xml:space="preserve">
+                <source>Soul Arthouse Inventory</source>
             </trans-unit>
 
-            <trans-unit id="plugin.sahiv_colorlist.title" xml:space="preserve">
-                <source>ColorList</source>
+            <!-- Color Plugin -->
+            <trans-unit id="plugin.sahiv_color.title" xml:space="preserve">
+                <source>Color Management Plugin</source>
             </trans-unit>
-            <trans-unit id="plugin.sahiv_colorlist.description" xml:space="preserve">
-                <source>Display all created Colors.</source>
-            </trans-unit>
-
-            <trans-unit id="plugin.sahiv_articlelist.title" xml:space="preserve">
-                <source>ArticleList</source>
-            </trans-unit>
-            <trans-unit id="plugin.sahiv_articlelist.description" xml:space="preserve">
-                <source>Display all created Articles.</source>
+            <trans-unit id="plugin.sahiv_color.description" xml:space="preserve">
+                <source>Manage all colors.</source>
             </trans-unit>
 
-            <trans-unit id="plugin.sahiv_materiallist.title" xml:space="preserve">
-                <source>MaterialList</source>
+            <!-- Material Plugin -->
+            <trans-unit id="plugin.sahiv_material.title" xml:space="preserve">
+                <source>Material Management Plugin</source>
             </trans-unit>
-            <trans-unit id="plugin.sahiv_materiallist.description" xml:space="preserve">
-                <source>Display all created Materials.</source>
-            </trans-unit>
-
-            <trans-unit id="plugin.sahiv_orderlist.title" xml:space="preserve">
-                <source>OrderList</source>
-            </trans-unit>
-            <trans-unit id="plugin.sahiv_orderlist.description" xml:space="preserve">
-                <source>Display all created Orders.</source>
+            <trans-unit id="plugin.sahiv_material.description" xml:space="preserve">
+                <source>Manage all materials.</source>
             </trans-unit>
 
-            <trans-unit id="plugin.sahiv_productlist.title" xml:space="preserve">
-                <source>ProductList</source>
+            <!-- Order Plugin -->
+            <trans-unit id="plugin.sahiv_order.title" xml:space="preserve">
+                <source>Order Management Plugin</source>
             </trans-unit>
-            <trans-unit id="plugin.sahiv_productlist.description" xml:space="preserve">
-                <source>Display all created Products.</source>
+            <trans-unit id="plugin.sahiv_order.description" xml:space="preserve">
+                <source>Manage all orders.</source>
             </trans-unit>
 
-            <trans-unit id="plugin.sahiv_typelist.title" xml:space="preserve">
-                <source>TypeList</source>
+            <!-- Product Plugin -->
+            <trans-unit id="plugin.sahiv_product.title" xml:space="preserve">
+                <source>Product Management Plugin</source>
             </trans-unit>
-            <trans-unit id="plugin.sahiv_typelist.description" xml:space="preserve">
-                <source>Display all created Types.</source>
+            <trans-unit id="plugin.sahiv_product.description" xml:space="preserve">
+                <source>Manage all products.</source>
+            </trans-unit>
+
+            <!-- Type Plugin -->
+            <trans-unit id="plugin.sahiv_type.title" xml:space="preserve">
+                <source>Type Management Plugin</source>
+            </trans-unit>
+            <trans-unit id="plugin.sahiv_type.description" xml:space="preserve">
+                <source>Manage all types.</source>
+            </trans-unit>
+
+            <!-- Colortone Plugin -->
+            <trans-unit id="plugin.sahiv_colortone.title" xml:space="preserve">
+                <source>Colortone Management Plugin</source>
+            </trans-unit>
+            <trans-unit id="plugin.sahiv_colortone.description" xml:space="preserve">
+                <source>Manage all colortones.</source>
             </trans-unit>
         </body>
     </file>

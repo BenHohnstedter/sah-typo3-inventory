@@ -12,8 +12,8 @@ ExtensionUtility::registerPlugin(
 
 ExtensionUtility::registerPlugin(
     'sahiv',
-    'ArticlePlugin',
-    'Article Plugin',
+    'ColortonePlugin',
+    'Colortone Plugin',
 );
 
 ExtensionUtility::registerPlugin(

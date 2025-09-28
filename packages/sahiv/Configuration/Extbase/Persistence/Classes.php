@@ -6,8 +6,8 @@ return [
     benh\sahiv\Domain\Model\Color::class => [
         'tableName' => 'tx_sahiv_domain_model_color',
     ],
-    benh\sahiv\Domain\Model\Article::class => [
-        'tableName' => 'tx_sahiv_domain_model_article',
+    benh\sahiv\Domain\Model\Colortone::class => [
+        'tableName' => 'tx_sahiv_domain_model_colortone',
     ],
     benh\sahiv\Domain\Model\Material::class => [
         'tableName' => 'tx_sahiv_domain_model_material',

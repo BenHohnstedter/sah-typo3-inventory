@@ -19,7 +19,7 @@ class ImageService
 
     public function __construct(
         protected ProductRepository $productRepository,
-        protected ArticleRepository $articleRepository,
+        // protected ArticleRepository $articleRepository,
         protected ResourceFactory $resourceFactory,
         protected FileRepository $fileRepository,
         protected StorageRepository $storageRepository,

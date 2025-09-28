@@ -26,7 +26,7 @@ class ProductController extends ActionController
         protected ProductComponentRepository $productComponentRepository,
         protected TypeRepository $typeRepository,
         protected ColorRepository $colorRepository,
-        protected ArticleRepository $articleRepository,
+        //protected ArticleRepository $articleRepository,
         protected DynamicFieldsService $dynamicFieldsService,
         protected ImageService $imageService,
         protected PersistenceManager $persistenceManager,

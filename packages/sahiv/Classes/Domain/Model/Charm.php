@@ -23,13 +23,13 @@ class Charm extends AbstractEntity
     /** @var string */
     protected $size = '';
 
-    /** @var ObjectStorage<ColorCp> */
+    /** @var ObjectStorage<Colorcp> */
     protected $colorscp;
 
     /** @var ObjectStorage<ColorTone> */
     protected $colortones;
 
-    /** @var ObjectStorage<MaterialCp> */
+    /** @var ObjectStorage<Materialcp> */
     protected $materialscp;
 
     /** @var ObjectStorage<Shape> */

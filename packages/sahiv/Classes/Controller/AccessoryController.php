@@ -39,6 +39,10 @@ class AccessoryController extends ActionController
 
     public function editAction(?Accessory $accessory = null): ResponseInterface
     {
+        $this->view->assignMultiple([
+            'accessory' => $accessory,
+        ]);
+
         return $this->htmlResponse();
     }
 

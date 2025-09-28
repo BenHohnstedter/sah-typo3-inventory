@@ -39,6 +39,10 @@ class MaterialcpController extends ActionController
 
     public function editAction(?Materialcp $materialcp = null): ResponseInterface
     {
+        $this->view->assignMultiple([
+            'materialcp' => $materialcp,
+        ]);
+
         return $this->htmlResponse();
     }
 

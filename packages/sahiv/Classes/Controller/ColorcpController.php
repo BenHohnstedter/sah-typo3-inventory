@@ -39,6 +39,10 @@ class ColorcpController extends ActionController
 
     public function editAction(?Colorcp $colorcp = null): ResponseInterface
     {
+        $this->view->assignMultiple([
+            'colorcp' => $colorcp,
+        ]);
+
         return $this->htmlResponse();
     }
 

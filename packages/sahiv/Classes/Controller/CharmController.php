@@ -39,6 +39,10 @@ class CharmController extends ActionController
 
     public function editAction(?Charm $charm = null): ResponseInterface
     {
+        $this->view->assignMultiple([
+            'charm' => $charm,
+        ]);
+
         return $this->htmlResponse();
     }
 

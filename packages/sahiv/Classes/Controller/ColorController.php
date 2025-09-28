@@ -41,6 +41,10 @@ class ColorController extends ActionController
 
     public function editAction(?Color $color = null): ResponseInterface
     {
+        $this->view->assignMultiple([
+            'color' => $color,
+        ]);
+
         return $this->htmlResponse();
     }
 

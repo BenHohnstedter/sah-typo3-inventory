@@ -39,6 +39,10 @@ class PearlController extends ActionController
 
     public function editAction(?Pearl $pearl = null): ResponseInterface
     {
+        $this->view->assignMultiple([
+            'pearl' => $pearl,
+        ]);
+
         return $this->htmlResponse();
     }
 

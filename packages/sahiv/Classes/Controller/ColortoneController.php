@@ -39,6 +39,10 @@ class ColortoneController extends ActionController
 
     public function editAction(?Colortone $colortone = null): ResponseInterface
     {
+        $this->view->assignMultiple([
+            'colortone' => $colortone,
+        ]);
+
         return $this->htmlResponse();
     }
 

@@ -39,6 +39,10 @@ class ShapeController extends ActionController
 
     public function editAction(?Shape $shape = null): ResponseInterface
     {
+        $this->view->assignMultiple([
+            'shape' => $shape,
+        ]);
+
         return $this->htmlResponse();
     }
 

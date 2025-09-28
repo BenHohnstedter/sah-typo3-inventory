@@ -39,6 +39,10 @@ class TypeController extends ActionController
 
     public function editAction(?Type $type = null): ResponseInterface
     {
+        $this->view->assignMultiple([
+            'type' => $type,
+        ]);
+
         return $this->htmlResponse();
     }
 

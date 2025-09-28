@@ -49,6 +49,15 @@ mod.wizards.newContentElement.wizardItems {
           list_type = sahiv_materialcpplugin
         }
       }
+      sahiv_shape {
+        iconIdentifier = sahiv-plugin-shape
+        title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_shape.title
+        description = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_shape.description
+        tt_content_defValues {
+          CType = list
+          list_type = sahiv_shapeplugin
+        }
+      }
       sahiv_order {
         iconIdentifier = sahiv-plugin-order
         title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_order.title

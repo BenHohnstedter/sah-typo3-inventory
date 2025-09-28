@@ -7,6 +7,7 @@ use benh\sahiv\Controller\ColorcpController;
 use benh\sahiv\Controller\ColortoneController;
 use benh\sahiv\Controller\MaterialController;
 use benh\sahiv\Controller\MaterialcpController;
+use benh\sahiv\Controller\ShapeController;
 use benh\sahiv\Controller\OrderController;
 use benh\sahiv\Controller\ProductController;
 use benh\sahiv\Controller\TypeController;
@@ -47,6 +48,13 @@ ExtensionUtility::configurePlugin(
     'MaterialcpPlugin',
     [MaterialcpController::class => 'list, new, create, edit, update, delete'],
     [MaterialcpController::class => 'list, new, create, edit, update, delete'],
+);
+
+ExtensionUtility::configurePlugin(
+    'sahiv',
+    'ShapePlugin',
+    [ShapeController::class => 'list, new, create, edit, update, delete'],
+    [ShapeController::class => 'list, new, create, edit, update, delete'],
 );
 
 ExtensionUtility::configurePlugin(

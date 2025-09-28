@@ -36,6 +36,12 @@ ExtensionUtility::registerPlugin(
 
 ExtensionUtility::registerPlugin(
     'sahiv',
+    'ShapePlugin',
+    'Shape Plugin',
+);
+
+ExtensionUtility::registerPlugin(
+    'sahiv',
     'OrderPlugin',
     'Order Plugin',
 );

@@ -1,0 +1,11 @@
+<h5 class="mb-3">
+    <f:translate key="list" extensionName="sahiv" />
+</h5>
+
+<f:render partial="Form/CreateLink.html" />
+
+<ul class="list-unstyled">
+    <f:for each="{shapes}" as="shape">
+        <f:render partial="List/ShapeItem" arguments="{shape: shape}" />
+    </f:for>
+</ul>

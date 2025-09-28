@@ -29,7 +29,7 @@ class Pearl extends AbstractEntity
     /** @var ObjectStorage<Colorcp> */
     protected $colorscp;
 
-    /** @var ObjectStorage<ColorTone> */
+    /** @var ObjectStorage<Colortone> */
     protected $colortones;
 
     /** @var ObjectStorage<Materialcp> */

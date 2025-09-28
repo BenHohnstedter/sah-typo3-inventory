@@ -5,7 +5,7 @@ namespace benh\sahiv\Domain\Model;
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
-class ColorTone extends AbstractEntity
+class Colortone extends AbstractEntity
 {
     /** @var string */
     protected $title = '';

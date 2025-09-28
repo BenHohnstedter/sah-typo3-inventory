@@ -40,6 +40,14 @@
                 <source>Manage all materials for Charms and Pearls</source>
             </trans-unit>
 
+            <!-- Shape Plugin -->
+            <trans-unit id="plugin.sahiv_shape.title" xml:space="preserve">
+                <source>Shape Management Plugin</source>
+            </trans-unit>
+            <trans-unit id="plugin.sahiv_shape.description" xml:space="preserve">
+                <source>Manage all shapes.</source>
+            </trans-unit>
+
             <!-- Order Plugin -->
             <trans-unit id="plugin.sahiv_order.title" xml:space="preserve">
                 <source>Order Management Plugin</source>

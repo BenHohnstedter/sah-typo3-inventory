@@ -18,6 +18,9 @@ return [
     benh\sahiv\Domain\Model\Materialcp::class => [
         'tableName' => 'tx_sahiv_domain_model_materialcp',
     ],
+    benh\sahiv\Domain\Model\Materialcp::class => [
+        'tableName' => 'tx_sahiv_domain_model_shape',
+    ],
     benh\sahiv\Domain\Model\Order::class => [
         'tableName' => 'tx_sahiv_domain_model_order',
     ],

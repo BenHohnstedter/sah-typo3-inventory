@@ -12,6 +12,12 @@ ExtensionUtility::registerPlugin(
 
 ExtensionUtility::registerPlugin(
     'sahiv',
+    'ColorcpPlugin',
+    'Colorcp Plugin',
+);
+
+ExtensionUtility::registerPlugin(
+    'sahiv',
     'ColortonePlugin',
     'Colortone Plugin',
 );
@@ -20,6 +26,12 @@ ExtensionUtility::registerPlugin(
     'sahiv',
     'MaterialPlugin',
     'Material Plugin',
+);
+
+ExtensionUtility::registerPlugin(
+    'sahiv',
+    'MaterialcpPlugin',
+    'Materialcp Plugin',
 );
 
 ExtensionUtility::registerPlugin(

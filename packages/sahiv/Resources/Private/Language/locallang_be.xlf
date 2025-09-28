@@ -16,12 +16,28 @@
                 <source>Manage all colors.</source>
             </trans-unit>
 
+            <!-- Colorcp Plugin -->
+            <trans-unit id="plugin.sahiv_colorcp.title" xml:space="preserve">
+                <source>Color Management Plugin for Charms and Pearls</source>
+            </trans-unit>
+            <trans-unit id="plugin.sahiv_colorcp.description" xml:space="preserve">
+                <source>Manage all colors for Charms and Pearls</source>
+            </trans-unit>
+
             <!-- Material Plugin -->
             <trans-unit id="plugin.sahiv_material.title" xml:space="preserve">
                 <source>Material Management Plugin</source>
             </trans-unit>
             <trans-unit id="plugin.sahiv_material.description" xml:space="preserve">
                 <source>Manage all materials.</source>
+            </trans-unit>
+
+            <!-- Materialcp Plugin -->
+            <trans-unit id="plugin.sahiv_materialcp.title" xml:space="preserve">
+                <source>Material Management Plugin for Charms and Pearls</source>
+            </trans-unit>
+            <trans-unit id="plugin.sahiv_materialcp.description" xml:space="preserve">
+                <source>Manage all materials for Charms and Pearls</source>
             </trans-unit>
 
             <!-- Order Plugin -->

@@ -1,0 +1,11 @@
+<h5 class="mb-3">
+    <f:translate key="list" extensionName="sahiv" />
+</h5>
+
+<f:render partial="Form/CreateLink.html" />
+
+<ul class="list-unstyled">
+    <f:for each="{colorscp}" as="colorcp">
+        <f:render partial="List/ColorcpItem" arguments="{colorcp: colorcp}" />
+    </f:for>
+</ul>

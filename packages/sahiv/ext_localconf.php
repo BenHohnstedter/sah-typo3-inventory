@@ -3,8 +3,10 @@
 declare(strict_types=1);
 
 use benh\sahiv\Controller\ColorController;
+use benh\sahiv\Controller\ColorcpController;
 use benh\sahiv\Controller\ColortoneController;
 use benh\sahiv\Controller\MaterialController;
+use benh\sahiv\Controller\MaterialcpController;
 use benh\sahiv\Controller\OrderController;
 use benh\sahiv\Controller\ProductController;
 use benh\sahiv\Controller\TypeController;
@@ -21,6 +23,13 @@ ExtensionUtility::configurePlugin(
 
 ExtensionUtility::configurePlugin(
     'sahiv',
+    'ColorcpPlugin',
+    [ColorcpController::class => 'list, new, create, edit, update, delete'],
+    [ColorcpController::class => 'list, new, create, edit, update, delete'],
+);
+
+ExtensionUtility::configurePlugin(
+    'sahiv',
     'ColortonePlugin',
     [ColortoneController::class => 'list, new, create, edit, update, delete'],
     [ColortoneController::class => 'list, new, create, edit, update, delete'],
@@ -31,6 +40,13 @@ ExtensionUtility::configurePlugin(
     'MaterialPlugin',
     [MaterialController::class => 'list, new, create, edit, update, delete'],
     [MaterialController::class => 'list, new, create, edit, update, delete'],
+);
+
+ExtensionUtility::configurePlugin(
+    'sahiv',
+    'MaterialcpPlugin',
+    [MaterialcpController::class => 'list, new, create, edit, update, delete'],
+    [MaterialcpController::class => 'list, new, create, edit, update, delete'],
 );
 
 ExtensionUtility::configurePlugin(

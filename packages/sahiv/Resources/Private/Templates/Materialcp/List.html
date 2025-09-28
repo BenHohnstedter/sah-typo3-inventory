@@ -1,0 +1,11 @@
+<h5 class="mb-3">
+    <f:translate key="list" extensionName="sahiv" />
+</h5>
+
+<f:render partial="Form/CreateLink.html" />
+
+<ul class="list-unstyled">
+    <f:for each="{materialscp}" as="materialcp">
+        <f:render partial="List/MaterialcpItem" arguments="{materialcp: materialcp}" />
+    </f:for>
+</ul>

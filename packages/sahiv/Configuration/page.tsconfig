@@ -13,6 +13,15 @@ mod.wizards.newContentElement.wizardItems {
           list_type = sahiv_colorplugin
         }
       }
+      sahiv_colorcp {
+        iconIdentifier = sahiv-plugin-colorcp
+        title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_colorcp.title
+        description = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_colorcp.description
+        tt_content_defValues {
+          CType = list
+          list_type = sahiv_colorcpplugin
+        }
+      }
       sahiv_colortone {
         iconIdentifier = sahiv-plugin-colortone
         title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_colortone.title
@@ -29,6 +38,15 @@ mod.wizards.newContentElement.wizardItems {
         tt_content_defValues {
           CType = list
           list_type = sahiv_materialplugin
+        }
+      }
+      sahiv_materialcp {
+        iconIdentifier = sahiv-plugin-materialcp
+        title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_materialcp.title
+        description = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_materialcp.description
+        tt_content_defValues {
+          CType = list
+          list_type = sahiv_materialcpplugin
         }
       }
       sahiv_order {

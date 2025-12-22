@@ -2,7 +2,10 @@
 
 namespace benh\sahiv\Service;
 
-use benh\sahiv\Domain\Repository\ArticleRepository;
+
+use benh\sahiv\Domain\Repository\PearlRepository;
+use benh\sahiv\Domain\Repository\CharmRepository;
+use benh\sahiv\Domain\Repository\AccessoryRepository;
 use benh\sahiv\Domain\Repository\ProductRepository;
 use TYPO3\CMS\Core\Resource\DuplicationBehavior;
 use TYPO3\CMS\Core\Resource\FileRepository;
@@ -15,11 +18,15 @@ use TYPO3\CMS\Extbase\Domain\Model\FileReference;
 class ImageService
 {
     const TYPE_PRODUCT = 'Product';
-    const TYPE_ARTICLE = 'Article';
+    const TYPE_PEARL = 'Pearl';
+    const TYPE_CHARM = 'Charm';
+    const TYPE_ACCESSORIE = 'Accessorie';
 
     public function __construct(
         protected ProductRepository $productRepository,
-        // protected ArticleRepository $articleRepository,
+        protected PearlRepository $pearlRepository,
+        protected CharmRepository $charmRepository,
+        protected AccessoryRepository $accessoryRepository,
         protected ResourceFactory $resourceFactory,
         protected FileRepository $fileRepository,
         protected StorageRepository $storageRepository,
@@ -64,8 +71,14 @@ class ImageService
             case self::TYPE_PRODUCT:
                 $this->productRepository->add($object);
                 break;
-            case self::TYPE_ARTICLE:
-                $this->articleRepository->add($object);
+            case self::TYPE_PEARL:
+                $this->pearlRepository->add($object);
+                break;
+            case self::TYPE_CHARM:
+                $this->charmRepository->add($object);
+                break;
+            case self::TYPE_ACCESSORIE:
+                $this->accessoryRepository->add($object);
                 break;
         }
 

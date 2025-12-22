@@ -1,0 +1,97 @@
+<div class="row">
+    <div class="col-12 mb-3">
+        <label for="title" class="form-label">
+            <f:translate key="title" extensionName="sahiv" />
+        </label>
+        <f:form.textfield property="title" required="true" class="form-control" id="title" />
+    </div>
+    <div class="col-12 mb-3">
+        <label for="acronym" class="form-label">
+            <f:translate key="acronym" extensionName="sahiv" />
+        </label>
+        <f:form.textfield property="acronym" class="form-control" id="acronym" />
+    </div>
+    <div class="col-12 mb-3">
+        <label for="image" class="form-label">
+            <f:translate key="image" extensionName="sahiv" />
+        </label>
+        <f:form.upload name="image" class="form-control" id="image" />
+    </div>
+    <div class="col-12 mb-3">
+        <label for="unit_price" class="form-label">
+            <f:translate key="unit_price" extensionName="sahiv" />
+        </label>
+        <f:form.textfield type="number" property="unitPrice" class="form-control" id="unit_price" step=".01" />
+    </div>
+    <div class="col-12 mb-3">
+        <label for="stock" class="form-label">
+            <f:translate key="stock" extensionName="sahiv" />
+        </label>
+        <f:form.textfield type="number" property="stock" class="form-control" id="stock" step="1" />
+    </div>
+    <div class="col-12 mb-3">
+        <label for="size" class="form-label">
+            <f:translate key="size" extensionName="sahiv" />
+        </label>
+        <f:form.textfield type="number" property="size" class="form-control" id="size" step="0.01" />
+    </div>
+    <div class="col-12 mb-3">
+        <p class="form-label mb-1">
+            <f:translate key="colors" extensionName="sahiv" />
+        </p>
+        <div class="row">
+            <f:for each="{colors}" as="color">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <f:form.checkbox property="colorscp" class="form-check-input" value="{color.uid}" multiple="1"
+                        id="color-{color.uid}" />
+                    <label for="color-{color.uid}" class="form-check-label">{color.title}</label>
+                </div>
+            </f:for>
+        </div>
+    </div>
+    <div class="col-12 mb-3">
+        <p class="form-label mb-1">
+            <f:translate key="colortones" extensionName="sahiv" />
+        </p>
+        <div class="row">
+            <f:for each="{colortones}" as="colortone">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <f:form.checkbox property="colortones" class="form-check-input" value="{colortone.uid}" multiple="1"
+                        id="colortone-{colortone.uid}" />
+                    <label for="colortone-{colortone.uid}" class="form-check-label">{colortone.title}</label>
+                </div>
+            </f:for>
+        </div>
+    </div>
+    <div class="col-12 mb-3">
+        <p class="form-label mb-1">
+            <f:translate key="materials" extensionName="sahiv" />
+        </p>
+        <div class="row">
+            <f:for each="{materials}" as="material">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <f:form.checkbox property="materialscp" class="form-check-input" value="{material.uid}" multiple="1"
+                        id="material-{material.uid}" />
+                    <label for="material-{material.uid}" class="form-check-label">{material.title}</label>
+                </div>
+            </f:for>
+        </div>
+    </div>
+    <div class="col-12 mb-3">
+        <p class="form-label mb-1">
+            <f:translate key="shapes" extensionName="sahiv" />
+        </p>
+        <div class="row">
+            <f:for each="{shapes}" as="shape">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <f:form.checkbox property="shapes" class="form-check-input" value="{shape.uid}" multiple="1"
+                        id="shape-{shape.uid}" />
+                    <label for="shape-{shape.uid}" class="form-check-label">{shape.title}</label>
+                </div>
+            </f:for>
+        </div>
+    </div>
+    <div class="col-12">
+        <f:form.submit value="{f:translate(key: 'submit', extensionName: 'sahiv')}" class="btn bg-primary text-white" />
+    </div>
+</div>

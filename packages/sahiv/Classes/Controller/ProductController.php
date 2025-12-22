@@ -81,12 +81,12 @@ class ProductController extends ActionController
 
         $types = $this->typeRepository->findBy(['is_type_for' => 1]);
         $colors = $this->colorRepository->findAll();
-        $articles = $this->articleRepository->findBy(['archived' => 0]);
+        //$articles = $this->articleRepository->findBy(['archived' => 0]);
 
         $this->view->assignMultiple([
             'types' => $types,
             'colors' => $colors,
-            'articles' => $articles,
+            //'articles' => $articles,
         ]);
 
         return $this->htmlResponse();
@@ -123,7 +123,7 @@ class ProductController extends ActionController
 
         $types = $this->typeRepository->findBy(['is_type_for' => 1]);
         $colors = $this->colorRepository->findAll();
-        $articles = $this->articleRepository->findBy(['archived' => 0]);
+        //$articles = $this->articleRepository->findBy(['archived' => 0]);
 
         $this->dynamicFieldsService->setDynamicProductFields($product);
 
@@ -131,7 +131,7 @@ class ProductController extends ActionController
             'product' => $product,
             'types' => $types,
             'colors' => $colors,
-            'articles' => $articles,
+            //'articles' => $articles,
         ]);
 
         return $this->htmlResponse();
@@ -196,7 +196,7 @@ class ProductController extends ActionController
         $existingProductComponent = $this->productComponentRepository->findOneBy(['parent' => $product->getUid(), 'article' => $inputArticle,]);
 
         if ($existingProductComponent) {
-            $existingProductComponent->setUsedAmount($existingProductComponent->getUsedAmount() + $inputUsedAmount);
+            //$existingProductComponent->setUsedAmount($existingProductComponent->getUsedAmount() + $inputUsedAmount);
 
             $this->productComponentRepository->update($existingProductComponent);
         } else {

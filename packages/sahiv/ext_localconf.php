@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use benh\sahiv\Controller\PearlController;
 use benh\sahiv\Controller\CharmController;
+use benh\sahiv\Controller\AccessoryController;
 use benh\sahiv\Controller\ColorController;
 use benh\sahiv\Controller\ColorcpController;
 use benh\sahiv\Controller\ColortoneController;
@@ -29,6 +30,13 @@ ExtensionUtility::configurePlugin(
     'CharmPlugin',
     [CharmController::class => 'list, new, create, edit, update, delete, detail'],
     [CharmController::class => 'list, new, create, edit, update, delete, detail'],
+);
+
+ExtensionUtility::configurePlugin(
+    'sahiv',
+    'AccessoryPlugin',
+    [AccessoryController::class => 'list, new, create, edit, update, delete, detail'],
+    [AccessoryController::class => 'list, new, create, edit, update, delete, detail'],
 );
 
 ExtensionUtility::configurePlugin(

@@ -22,6 +22,15 @@ mod.wizards.newContentElement.wizardItems {
           list_type = sahiv_charmplugin
         }
       }
+      sahiv_accessory {
+        iconIdentifier = sahiv-plugin-accessory
+        title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_accessory.title
+        description = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_accessory.description
+        tt_content_defValues {
+          CType = list
+          list_type = sahiv_accessoryplugin
+        }
+      }
       sahiv_color {
         iconIdentifier = sahiv-plugin-color
         title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_color.title

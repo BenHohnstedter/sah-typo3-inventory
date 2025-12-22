@@ -24,6 +24,14 @@
                 <source>Manage all charms.</source>
             </trans-unit>
 
+            <!-- Accessory Plugin -->
+            <trans-unit id="plugin.sahiv_accessory.title" xml:space="preserve">
+                <source>Accessory Plugin</source>
+            </trans-unit>
+            <trans-unit id="plugin.sahiv_accessory.description" xml:space="preserve">
+                <source>Manage all accessories.</source>
+            </trans-unit>
+
             <!-- Color Plugin -->
             <trans-unit id="plugin.sahiv_color.title" xml:space="preserve">
                 <source>Color Plugin for Accessories</source>

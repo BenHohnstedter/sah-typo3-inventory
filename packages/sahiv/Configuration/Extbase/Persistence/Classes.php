@@ -9,6 +9,9 @@ return [
     benh\sahiv\Domain\Model\Charm::class => [
         'tableName' => 'tx_sahiv_domain_model_charm',
     ],
+    benh\sahiv\Domain\Model\Charm::class => [
+        'tableName' => 'tx_sahiv_domain_model_accessory',
+    ],
     benh\sahiv\Domain\Model\Color::class => [
         'tableName' => 'tx_sahiv_domain_model_color',
     ],

@@ -3,6 +3,12 @@
 	<file source-language="en" datatype="plaintext" original="EXT:benh/sahiv/Resources/Private/Language/locallang.xlf" date="2025-07-01T10:00:00Z" product-name="sahiv">
 		<header/>
 		<body>
+            <trans-unit id="yes" xml:space="preserve">
+                <source>Yes</source>
+            </trans-unit>
+            <trans-unit id="no" xml:space="preserve">
+                <source>No</source>
+            </trans-unit>
             <trans-unit id="acronym" xml:space="preserve">
                 <source>Acronym</source>
             </trans-unit>
@@ -113,6 +119,9 @@
             </trans-unit>
             <trans-unit id="reset" xml:space="preserve">
                 <source>Reset</source>
+            </trans-unit>
+            <trans-unit id="selfmade" xml:space="preserve">
+                <source>Selfmade</source>
             </trans-unit>
             <trans-unit id="selling_price" xml:space="preserve">
                 <source>Selling Price</source>

@@ -1,0 +1,16 @@
+<h5 class="mb-3">
+    <f:translate key="list" extensionName="sahiv" />
+</h5>
+
+<f:security.ifHasRole role="Admin">
+    <f:render partial="Filter/CharmFilter.html" arguments="{_all}" />
+    <f:render partial="Form/CreateLink.html" />
+</f:security.ifHasRole>
+
+<div class="container-fluid my-2">
+    <div class="row">
+        <f:for each="{charms}" as="charm" iteration="productIterator">
+            <f:render partial="List/CharmItem" arguments="{charm: charm}" />
+        </f:for>
+    </div>
+</div>

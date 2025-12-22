@@ -11,7 +11,6 @@ use benh\sahiv\Domain\Repository\ShapeRepository;
 use benh\sahiv\Service\ImageService;
 use Psr\Http\Message\ResponseInterface;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
-use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 class PearlController extends ActionController
 {

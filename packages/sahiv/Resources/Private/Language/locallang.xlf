@@ -75,6 +75,9 @@
             <trans-unit id="is_bought" xml:space="preserve">
                 <source>Is Bought</source>
             </trans-unit>
+            <trans-unit id="is_selfmade" xml:space="preserve">
+                <source>Is Selfmade</source>
+            </trans-unit>
             <trans-unit id="list" xml:space="preserve">
                 <source>List</source>
             </trans-unit>

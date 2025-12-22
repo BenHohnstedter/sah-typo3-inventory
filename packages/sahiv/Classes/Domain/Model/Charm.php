@@ -74,7 +74,10 @@ class Charm extends AbstractEntity
         return $this->images;
     }
 
-    public function setImages(ObjectStorage $images): void
+    /**
+     * @param ObjectStorage<FileReference> $images images
+     */
+    public function setImages($images): void
     {
         $this->images = $images;
     }

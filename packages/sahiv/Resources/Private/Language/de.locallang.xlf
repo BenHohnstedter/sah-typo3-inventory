@@ -75,6 +75,9 @@
             <trans-unit id="is_bought" xml:space="preserve">
                 <target>Ist Gekauft</target>
             </trans-unit>
+            <trans-unit id="is_selfmade" xml:space="preserve">
+                <target>Ist Selfmade</target>
+            </trans-unit>
             <trans-unit id="list" xml:space="preserve">
                 <target>Liste</target>
             </trans-unit>

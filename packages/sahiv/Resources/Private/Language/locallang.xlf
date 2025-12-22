@@ -21,6 +21,12 @@
             <trans-unit id="colors" xml:space="preserve">
                 <source>Colors</source>
             </trans-unit>
+            <trans-unit id="colortone" xml:space="preserve">
+                <source>Colortone</source>
+            </trans-unit>
+            <trans-unit id="colortones" xml:space="preserve">
+                <source>Colortones</source>
+            </trans-unit>
             <trans-unit id="component" xml:space="preserve">
                 <source>Component</source>
             </trans-unit>
@@ -57,8 +63,8 @@
             <trans-unit id="articles" xml:space="preserve">
                 <source>Articles</source>
             </trans-unit>
-            <trans-unit id="in_stock" xml:space="preserve">
-                <source>In Stock</source>
+            <trans-unit id="stock" xml:space="preserve">
+                <source>Stock</source>
             </trans-unit>
             <trans-unit id="is_bought" xml:space="preserve">
                 <source>Is Bought</source>
@@ -68,6 +74,9 @@
             </trans-unit>
             <trans-unit id="material" xml:space="preserve">
                 <source>Material</source>
+            </trans-unit>
+            <trans-unit id="materials" xml:space="preserve">
+                <source>Materials</source>
             </trans-unit>
             <trans-unit id="material_price" xml:space="preserve">
                 <source>Material Price</source>
@@ -110,6 +119,12 @@
             </trans-unit>
             <trans-unit id="settings" xml:space="preserve">
                 <source>Settings</source>
+            </trans-unit>
+            <trans-unit id="shape" xml:space="preserve">
+                <source>Shape</source>
+            </trans-unit>
+            <trans-unit id="shapes" xml:space="preserve">
+                <source>Shapes</source>
             </trans-unit>
             <trans-unit id="shop_link" xml:space="preserve">
                 <source>Shop Link</source>

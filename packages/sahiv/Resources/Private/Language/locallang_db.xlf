@@ -7,40 +7,6 @@
                 <source>This is a text for testing.</source>
             </trans-unit>
 
-            <trans-unit id="tx_sahiv_domain_model_color.notes" xml:space="preserve">
-                <source>Notes</source>
-            </trans-unit>
-            <trans-unit id="tx_sahiv_domain_model_article" xml:space="preserve">
-                <source>Article</source>
-            </trans-unit>
-            <trans-unit id="tx_sahiv_domain_model_article.title" xml:space="preserve">
-                <source>Title</source>
-            </trans-unit>
-            <trans-unit id="tx_sahiv_domain_model_article.acronym" xml:space="preserve">
-                <source>Acronym</source>
-            </trans-unit>
-            <trans-unit id="tx_sahiv_domain_model_article.type" xml:space="preserve">
-                <source>Type</source>
-            </trans-unit>
-            <trans-unit id="tx_sahiv_domain_model_article.colors" xml:space="preserve">
-                <source>Colors</source>
-            </trans-unit>
-            <trans-unit id="tx_sahiv_domain_model_article.material" xml:space="preserve">
-                <source>Material</source>
-            </trans-unit>
-            <trans-unit id="tx_sahiv_domain_model_article.size" xml:space="preserve">
-                <source>Size</source>
-            </trans-unit>
-            <trans-unit id="tx_sahiv_domain_model_article.in_stock" xml:space="preserve">
-                <source>In Stock</source>
-            </trans-unit>
-            <trans-unit id="tx_sahiv_domain_model_article.notes" xml:space="preserve">
-                <source>Notes</source>
-            </trans-unit>
-            <trans-unit id="tx_sahiv_domain_model_article.images" xml:space="preserve">
-                <source>Media Files</source>
-            </trans-unit>
-
             <trans-unit id="tx_sahiv_domain_model_order" xml:space="preserve">
                 <source>Order</source>
             </trans-unit>

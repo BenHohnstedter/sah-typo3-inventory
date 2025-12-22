@@ -1,0 +1,118 @@
+<div class="col-lg-3 col-sm-6 col-12 mb-3">
+    <div class="card h-100">
+        <div class="sah-container-one-to-one-aspect-ratio">
+            <div class="sah-content-one-to-one-aspect-ratio">
+                <f:for each="{pearl.images}" as="image">
+                    <f:image image="{image}" class="img-fluid rounded-top h-100 w-100" />
+                </f:for>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="justify-content-between d-flex">
+                <h5 class="card-title my-auto">{pearl.title}</h5>
+                <div>
+                    <f:security.ifHasRole role="Admin">
+                        <div class="btn-group dropstart">
+                            <button type="button" class="btn px-3 py-2 bg-primary rounded-3 text-white"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                </svg>
+                            </button>
+                            <ul class="dropdown-menu p-2">
+                                <li class="py-1">
+                                    <f:link.action action="detail" arguments="{pearl: pearl}"
+                                        class="btn bg-primary text-white w-100">
+                                        <f:translate key="detail" extensionName="sahiv" />
+                                    </f:link.action>
+                                </li>
+                                <li class="py-1">
+                                    <f:link.action action="edit" arguments="{pearl: pearl}"
+                                        class="btn bg-primary text-white w-100">
+                                        <f:translate key="edit" extensionName="sahiv" />
+                                    </f:link.action>
+                                </li>
+                                <li class="py-1">
+                                    <f:link.action action="delete" arguments="{pearl: pearl}"
+                                        class="btn bg-primary text-white w-100">
+                                        <f:translate key="delete" extensionName="sahiv" />
+                                    </f:link.action>
+                                </li>
+                            </ul>
+                        </div>
+                    </f:security.ifHasRole>
+                </div>
+            </div>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <f:translate key="acronym" extensionName="sahiv" />
+                        </td>
+                        <td>{pearl.acronym}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <f:translate key="unit_price" extensionName="sahiv" />
+                        </td>
+                        <td>{pearl.unitPrice}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <f:translate key="stock" extensionName="sahiv" />
+                        </td>
+                        <td>{pearl.stock}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <f:translate key="size" extensionName="sahiv" />
+                        </td>
+                        <td>{pearl.size}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <f:translate key="colors" extensionName="sahiv" />
+                        </td>
+                        <td>
+                            <f:for each="{pearl.colorscp}" as="color">
+                                {color.title}
+                            </f:for>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <f:translate key="colortones" extensionName="sahiv" />
+                        </td>
+                        <td>
+                            <f:for each="{pearl.colortones}" as="colortone">
+                                {colortone.title}
+                            </f:for>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <f:translate key="materials" extensionName="sahiv" />
+                        </td>
+                        <td>
+                            <f:for each="{pearl.materialscp}" as="material">
+                                {material.title}
+                            </f:for>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <f:translate key="shapes" extensionName="sahiv" />
+                        </td>
+                        <td>
+                            <f:for each="{pearl.shapes}" as="shape">
+                                {shape.title}
+                            </f:for>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

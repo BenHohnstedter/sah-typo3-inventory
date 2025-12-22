@@ -21,6 +21,12 @@
             <trans-unit id="colors" xml:space="preserve">
                 <target>Farben</target>
             </trans-unit>
+            <trans-unit id="colortone" xml:space="preserve">
+                <target>Farbton</target>
+            </trans-unit>
+            <trans-unit id="colortones" xml:space="preserve">
+                <target>Farbtöne</target>
+            </trans-unit>
             <trans-unit id="component" xml:space="preserve">
                 <target>Komponent</target>
             </trans-unit>
@@ -57,7 +63,7 @@
             <trans-unit id="articles" xml:space="preserve">
                 <target>Gegenstände</target>
             </trans-unit>
-            <trans-unit id="in_stock" xml:space="preserve">
+            <trans-unit id="stock" xml:space="preserve">
                 <target>Lagerbestand</target>
             </trans-unit>
             <trans-unit id="is_bought" xml:space="preserve">
@@ -68,6 +74,9 @@
             </trans-unit>
             <trans-unit id="material" xml:space="preserve">
                 <target>Material</target>
+            </trans-unit>
+            <trans-unit id="materials" xml:space="preserve">
+                <target>Materialien</target>
             </trans-unit>
             <trans-unit id="material_price" xml:space="preserve">
                 <target>Materialpreis</target>
@@ -110,6 +119,12 @@
             </trans-unit>
             <trans-unit id="settings" xml:space="preserve">
                 <target>Verkaufspreis</target>
+            </trans-unit>
+            <trans-unit id="shape" xml:space="preserve">
+                <target>Form</target>
+            </trans-unit>
+            <trans-unit id="shapes" xml:space="preserve">
+                <target>Formen</target>
             </trans-unit>
             <trans-unit id="shop_link" xml:space="preserve">
                 <target>Laden Link</target>

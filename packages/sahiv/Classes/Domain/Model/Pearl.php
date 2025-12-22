@@ -79,7 +79,7 @@ class Pearl extends AbstractEntity
         $this->acronym = $acronym;
     }
 
-    public function getImages(): ObjectStorage
+    public function getImages(): ?ObjectStorage
     {
         return $this->images;
     }

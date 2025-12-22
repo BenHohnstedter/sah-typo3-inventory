@@ -16,6 +16,14 @@
                 <source>Manage all pearls.</source>
             </trans-unit>
 
+            <!-- Charm Plugin -->
+            <trans-unit id="plugin.sahiv_charm.title" xml:space="preserve">
+                <source>Charm Plugin</source>
+            </trans-unit>
+            <trans-unit id="plugin.sahiv_charm.description" xml:space="preserve">
+                <source>Manage all charms.</source>
+            </trans-unit>
+
             <!-- Color Plugin -->
             <trans-unit id="plugin.sahiv_color.title" xml:space="preserve">
                 <source>Color Plugin for Accessories</source>

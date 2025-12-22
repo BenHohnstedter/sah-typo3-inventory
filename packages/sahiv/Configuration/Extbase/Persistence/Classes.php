@@ -6,6 +6,9 @@ return [
     benh\sahiv\Domain\Model\Pearl::class => [
         'tableName' => 'tx_sahiv_domain_model_pearl',
     ],
+    benh\sahiv\Domain\Model\Charm::class => [
+        'tableName' => 'tx_sahiv_domain_model_charm',
+    ],
     benh\sahiv\Domain\Model\Color::class => [
         'tableName' => 'tx_sahiv_domain_model_color',
     ],

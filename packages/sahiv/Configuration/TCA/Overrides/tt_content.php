@@ -12,6 +12,12 @@ ExtensionUtility::registerPlugin(
 
 ExtensionUtility::registerPlugin(
     'sahiv',
+    'CharmPlugin',
+    'Charm Plugin',
+);
+
+ExtensionUtility::registerPlugin(
+    'sahiv',
     'ColorPlugin',
     'Color Plugin',
 );

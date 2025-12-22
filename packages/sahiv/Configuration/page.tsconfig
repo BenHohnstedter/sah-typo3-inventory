@@ -13,6 +13,15 @@ mod.wizards.newContentElement.wizardItems {
           list_type = sahiv_pearlplugin
         }
       }
+      sahiv_charm {
+        iconIdentifier = sahiv-plugin-charm
+        title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_charm.title
+        description = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_charm.description
+        tt_content_defValues {
+          CType = list
+          list_type = sahiv_charmplugin
+        }
+      }
       sahiv_color {
         iconIdentifier = sahiv-plugin-color
         title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_color.title

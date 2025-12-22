@@ -4,6 +4,15 @@ mod.wizards.newContentElement.wizardItems {
     header = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv
     show = *
     elements {
+      sahiv_pearl {
+        iconIdentifier = sahiv-plugin-pearl
+        title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_pearl.title
+        description = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_pearl.description
+        tt_content_defValues {
+          CType = list
+          list_type = sahiv_pearlplugin
+        }
+      }
       sahiv_color {
         iconIdentifier = sahiv-plugin-color
         title = LLL:EXT:sahiv/Resources/Private/Language/locallang_be.xlf:plugin.sahiv_color.title

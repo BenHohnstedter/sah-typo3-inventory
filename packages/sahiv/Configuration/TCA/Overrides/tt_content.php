@@ -6,6 +6,12 @@ defined('TYPO3') or die();
 
 ExtensionUtility::registerPlugin(
     'sahiv',
+    'PearlPlugin',
+    'Pearl Plugin',
+);
+
+ExtensionUtility::registerPlugin(
+    'sahiv',
     'ColorPlugin',
     'Color Plugin',
 );

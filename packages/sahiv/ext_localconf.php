@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use benh\sahiv\Controller\PearlController;
 use benh\sahiv\Controller\ColorController;
 use benh\sahiv\Controller\ColorcpController;
 use benh\sahiv\Controller\ColortoneController;
@@ -14,6 +15,13 @@ use benh\sahiv\Controller\TypeController;
 use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 
 defined('TYPO3') or die();
+
+ExtensionUtility::configurePlugin(
+    'sahiv',
+    'PearlPlugin',
+    [PearlController::class => 'list, new, create, edit, update, delete, detail'],
+    [PearlController::class => 'list, new, create, edit, update, delete, detail'],
+);
 
 ExtensionUtility::configurePlugin(
     'sahiv',                                                                // extension name, matching the PHP namespaces (but without the vendor)

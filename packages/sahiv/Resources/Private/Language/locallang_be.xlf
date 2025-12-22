@@ -8,49 +8,57 @@
                 <source>Soul Arthouse Inventory</source>
             </trans-unit>
 
+            <!-- Pearl Plugin -->
+            <trans-unit id="plugin.sahiv_pearl.title" xml:space="preserve">
+                <source>Pearl Plugin</source>
+            </trans-unit>
+            <trans-unit id="plugin.sahiv_pearl.description" xml:space="preserve">
+                <source>Manage all pearls.</source>
+            </trans-unit>
+
             <!-- Color Plugin -->
             <trans-unit id="plugin.sahiv_color.title" xml:space="preserve">
-                <source>Color Management Plugin</source>
+                <source>Color Plugin for Accessories</source>
             </trans-unit>
             <trans-unit id="plugin.sahiv_color.description" xml:space="preserve">
-                <source>Manage all colors.</source>
+                <source>Manage all colors for Accessories.</source>
             </trans-unit>
 
             <!-- Colorcp Plugin -->
             <trans-unit id="plugin.sahiv_colorcp.title" xml:space="preserve">
-                <source>Color Management Plugin for Charms and Pearls</source>
+                <source>Color Plugin for Charms and Pearls</source>
             </trans-unit>
             <trans-unit id="plugin.sahiv_colorcp.description" xml:space="preserve">
-                <source>Manage all colors for Charms and Pearls</source>
+                <source>Manage all colors for Charms and Pearls.</source>
             </trans-unit>
 
             <!-- Material Plugin -->
             <trans-unit id="plugin.sahiv_material.title" xml:space="preserve">
-                <source>Material Management Plugin</source>
+                <source>Material Plugin for Accessories</source>
             </trans-unit>
             <trans-unit id="plugin.sahiv_material.description" xml:space="preserve">
-                <source>Manage all materials.</source>
+                <source>Manage all materials for Accessories.</source>
             </trans-unit>
 
             <!-- Materialcp Plugin -->
             <trans-unit id="plugin.sahiv_materialcp.title" xml:space="preserve">
-                <source>Material Management Plugin for Charms and Pearls</source>
+                <source>Material Plugin for Charms and Pearls</source>
             </trans-unit>
             <trans-unit id="plugin.sahiv_materialcp.description" xml:space="preserve">
-                <source>Manage all materials for Charms and Pearls</source>
+                <source>Manage all materials for Charms and Pearls.</source>
             </trans-unit>
 
             <!-- Shape Plugin -->
             <trans-unit id="plugin.sahiv_shape.title" xml:space="preserve">
-                <source>Shape Management Plugin</source>
+                <source>Shape Plugin for Pearls</source>
             </trans-unit>
             <trans-unit id="plugin.sahiv_shape.description" xml:space="preserve">
-                <source>Manage all shapes.</source>
+                <source>Manage all shapes for Pearls.</source>
             </trans-unit>
 
             <!-- Order Plugin -->
             <trans-unit id="plugin.sahiv_order.title" xml:space="preserve">
-                <source>Order Management Plugin</source>
+                <source>Order Plugin</source>
             </trans-unit>
             <trans-unit id="plugin.sahiv_order.description" xml:space="preserve">
                 <source>Manage all orders.</source>
@@ -58,7 +66,7 @@
 
             <!-- Product Plugin -->
             <trans-unit id="plugin.sahiv_product.title" xml:space="preserve">
-                <source>Product Management Plugin</source>
+                <source>Product Plugin</source>
             </trans-unit>
             <trans-unit id="plugin.sahiv_product.description" xml:space="preserve">
                 <source>Manage all products.</source>
@@ -66,18 +74,18 @@
 
             <!-- Type Plugin -->
             <trans-unit id="plugin.sahiv_type.title" xml:space="preserve">
-                <source>Type Management Plugin</source>
+                <source>Type Plugin for Accessories</source>
             </trans-unit>
             <trans-unit id="plugin.sahiv_type.description" xml:space="preserve">
-                <source>Manage all types.</source>
+                <source>Manage all types for Accessories.</source>
             </trans-unit>
 
             <!-- Colortone Plugin -->
             <trans-unit id="plugin.sahiv_colortone.title" xml:space="preserve">
-                <source>Colortone Management Plugin</source>
+                <source>Colortone Plugin for Charms and Pearls</source>
             </trans-unit>
             <trans-unit id="plugin.sahiv_colortone.description" xml:space="preserve">
-                <source>Manage all colortones.</source>
+                <source>Manage all colortones for Charms and Pearls.</source>
             </trans-unit>
         </body>
     </file>

@@ -69,7 +69,7 @@ class Charm extends AbstractEntity
         $this->title = $title;
     }
 
-    public function getImages(): ObjectStorage
+    public function getImages(): ?ObjectStorage
     {
         return $this->images;
     }
@@ -112,7 +112,7 @@ class Charm extends AbstractEntity
         $this->size = $size;
     }
 
-    public function getColorscp(): ObjectStorage
+    public function getColorscp(): ?ObjectStorage
     {
         return $this->colorscp;
     }
@@ -122,7 +122,7 @@ class Charm extends AbstractEntity
         $this->colorscp = $colorscp;
     }
 
-    public function getColortones(): ObjectStorage
+    public function getColortones(): ?ObjectStorage
     {
         return $this->colortones;
     }
@@ -132,7 +132,7 @@ class Charm extends AbstractEntity
         $this->colortones = $colortones;
     }
 
-    public function getMaterialscp(): ObjectStorage
+    public function getMaterialscp(): ?ObjectStorage
     {
         return $this->materialscp;
     }
@@ -142,7 +142,7 @@ class Charm extends AbstractEntity
         $this->materialscp = $materialscp;
     }
 
-    public function getTypes(): ObjectStorage
+    public function getTypes(): ?ObjectStorage
     {
         return $this->types;
     }

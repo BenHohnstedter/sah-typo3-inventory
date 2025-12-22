@@ -1,6 +1,6 @@
 <?php
 
-namespace Benh\Sahiv\Domain\Model;
+namespace benh\sahiv\Domain\Model;
 
 use TYPO3\CMS\Extbase\Domain\Model\FileReference;
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
@@ -57,12 +57,15 @@ class Accessory extends AbstractEntity
         $this->title = $title;
     }
 
-    public function getImages(): ObjectStorage
+    public function getImages(): ?ObjectStorage
     {
         return $this->images;
     }
 
-    public function setImages(ObjectStorage $images): void
+    /**
+     * @param ObjectStorage<FileReference> $images images
+     */
+    public function setImages($images): void
     {
         $this->images = $images;
     }
@@ -107,7 +110,7 @@ class Accessory extends AbstractEntity
         $this->size = $size;
     }
 
-    public function getColors(): ObjectStorage
+    public function getColors(): ?ObjectStorage
     {
         return $this->colors;
     }

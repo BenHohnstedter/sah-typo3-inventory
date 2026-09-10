@@ -6,3 +6,6 @@ nbproject
 /vendor
 /public/*
 !/public/.htaccess
+/typo3conf/*
+!/typo3conf/ext
+!/typo3conf/sites

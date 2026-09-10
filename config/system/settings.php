@@ -2,7 +2,7 @@
 return [
     'BE' => [
         'debug' => false,
-        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$bUp0aVFDNUQxbmxCQ2RqTw$Flbfjf2UwLD8gvV+lPE8fXD98L4SITxUA/TPWErtBS0',
+        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$WmRhcDE5anV6UUx1dWZncg$vrYoPPMIeAbvZIzyrw2imoBJkGmx1Fns6sVjqF9OqYk',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
             'options' => [],
@@ -12,33 +12,25 @@ return [
         'Connections' => [
             'Default' => [
                 'charset' => 'utf8mb4',
-                'dbname' => 'db',
+                'dbname' => 'sah_typo3',
                 'defaultTableOptions' => [
                     'charset' => 'utf8mb4',
                     'collation' => 'utf8mb4_unicode_ci',
                 ],
-                'driver' => 'mysqli',
-                'host' => 'db',
-                'password' => 'db',
+                'driver' => 'pdo_mysql',
+                'host' => '127.0.0.1',
                 'port' => 3306,
-                'user' => 'db',
-            ],
-        ],
-    ],
-    'EXTCONF' => [
-        'lang' => [
-            'availableLanguages' => [
-                'de',
+                'user' => 'root',
             ],
         ],
     ],
     'EXTENSIONS' => [
         'backend' => [
             'backendFavicon' => '',
-            'backendLogo' => 'EXT:sahfe/Resources/Public/Images/Logo.png ',
+            'backendLogo' => '',
             'loginBackgroundImage' => '',
             'loginFootnote' => '',
-            'loginHighlightColor' => '#441752',
+            'loginHighlightColor' => '',
             'loginLogo' => '',
             'loginLogoAlt' => '',
         ],
@@ -58,12 +50,6 @@ return [
             'options' => [],
         ],
     ],
-    'GFX' => [
-        'processor' => 'GraphicsMagick',
-        'processor_effects' => false,
-        'processor_enabled' => true,
-        'processor_path' => '/usr/bin/',
-    ],
     'LOG' => [
         'TYPO3' => [
             'CMS' => [
@@ -80,11 +66,11 @@ return [
         ],
     ],
     'MAIL' => [
-        'transport' => 'sendmail',
-        'transport_sendmail_command' => '/usr/local/bin/mailpit sendmail -t --smtp-addr 127.0.0.1:1025',
+        'transport' => 'smtp',
+        'transport_sendmail_command' => '',
         'transport_smtp_encrypt' => '',
         'transport_smtp_password' => '',
-        'transport_smtp_server' => '',
+        'transport_smtp_server' => 'localhost:25',
         'transport_smtp_username' => '',
     ],
     'SYS' => [
@@ -110,13 +96,13 @@ return [
         ],
         'devIPmask' => '',
         'displayErrors' => 0,
-        'encryptionKey' => '831fcaf2c07f4360780216996b306d0d39edb52e89506b88df4ab29e14a9c6983f3e369818423f920296019bd17c4cd4',
+        'encryptionKey' => '759e3d44cf64bf781f93eec60cd6b75803c16b7b7a8182b6391e6e85b00d5e2a0869d513cf089e34fd869c10b89c485c',
         'exceptionalErrors' => 4096,
         'features' => [
             'frontend.cache.autoTagging' => true,
             'security.system.enforceAllowedFileExtensions' => true,
         ],
-        'sitename' => 'Soul Arthouse',
+        'sitename' => 'SAH TYPO3 Inventory',
         'systemMaintainers' => [
             1,
         ],

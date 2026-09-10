@@ -1,26 +1,13 @@
-base: 'https://soul-arthouse.ddev.site/'
+base: 'http://localhost/pu-sah-typo3-inventory/'
+errorHandling: {  }
 languages:
-  -
-    title: German
-    enabled: true
-    languageId: 0
-    base: /
-    locale: de_DE.utf8
-    navigationTitle: English
-    flag: de
-    hreflang: ''
-    websiteTitle: ''
   -
     title: English
     enabled: true
-    locale: en_US
-    hreflang: ''
-    base: /en/
-    websiteTitle: ''
+    languageId: 0
+    base: /
+    locale: en_US.UTF-8
     navigationTitle: English
-    fallbackType: strict
-    fallbacks: '0'
-    flag: en-us-gb
-    languageId: 1
+    flag: us
 rootPageId: 1
-websiteTitle: 'Soul Arthouse'
+routes: {  }

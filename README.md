@@ -1,66 +1,56 @@
-# TYPO3 CMS Base Distribution
+# sah-typo3-inventory
 
-Get going quickly with TYPO3 CMS.
+Eine TYPO3-Website, die als **Lagerverwaltung** rund um die Schmuckmaterialien von Soul Artistry aufgebaut wird. Das Projekt basiert auf der offiziellen TYPO3-Basis-Distribution (v13) und dient als Lernprojekt für das CMS: Composer-Setup, Site-Package, Datenbank-Anbindung und TYPO3-spezifische Konfiguration.
 
-## Prerequisites
+## Stand
 
-* PHP 8.2
-* [Composer](https://getcomposer.org/download/)
+- TYPO3 13 installiert und eingrichter (Setup abgeschlossen)
+- Site-Konfiguration unter `config/sites/main/config.yaml`
+- Datenbank `sah_typo3` mit 65 Tabellen (TYPO3-Kern)
+- Lauffähig unter lokalem Apache/XAMPP (natives PHP-Modul)
 
-## Quickstart
+**Lokal erreichbar unter:** `http://localhost/pu-sah-typo3-inventory/`
 
-* `composer create-project typo3/cms-base-distribution project-name ^13`
-* `cd project-name`
+## Technologien
 
-Note that this distribution installs most, but not all of the TYPO3 CMS core extensions.
-Depending on your need you might also want to install other TYPO3 extensions from
-[packagist.org](https://packagist.org/?type=typo3-cms-framework).
+- TYPO3 13 (cms-base-distribution, Composer-basiert)
+- PHP 8.2+
+- MySQL / MariaDB 10.4 (PDO)
+- Apache via XAMPP (Junction auf `public/`)
 
-### Setup
-
-To start an interactive installation, you can do so by executing the following
-command and then follow the wizard:
+## Einrichtung
 
 ```bash
-composer exec typo3 setup
+composer install
 ```
 
-### Setup unattended (optional)
-
-If you're a more advanced user, you might want to leverage the unattended installation.
-To do this, you need to execute the following command and substitute the arguments
-with your own environment configuration.
+Anschließend das Setup ausführen (einmalig):
 
 ```bash
-export TYPO3_SETUP_ADMIN_PASSWORD=$(tr -dc "_A-Za-z0-9#=$()/" < /dev/urandom | head -c24)
-composer exec -- typo3 setup \
-    --no-interaction \
-    --server-type=other \
-    --driver=sqlite \
+composer exec typo3 setup -- --no-interaction \
+    --server-type=apache \
+    --driver=pdoMysql \
+    --host=127.0.0.1 --dbname=sah_typo3 \
+    --username=root --password= \
     --admin-username=admin \
-    --admin-email="info@example.com" \
-    --project-name="My TYPO3 Project" \
-    --create-site="http://localhost:8000/"
-echo "Admin password: ${TYPO3_SETUP_ADMIN_PASSWORD}"
+    --project-name="Soul Arthouse Inventory" \
+    --create-site="http://localhost/pu-sah-typo3-inventory/"
 ```
 
-### Development server
+> Der einmalig generierte Admin-Zugang liegt lokal unter
+> `typo3conf/admin_password.txt` (außerhalb der Versionsverwaltung zu halten).
 
-While it's advised to use a more sophisticated web server such as
-Apache 2 or Nginx, you can instantly run the project by using PHPs` built-in
-[web server](https://secure.php.net/manual/en/features.commandline.webserver.php).
+## Struktur
 
-* `TYPO3_CONTEXT=Development php -S localhost:8000 -t public`
-* open your browser at "http://localhost:8000"
+```
+public/                – Web-Root (DocumentRoot, Junction unter htdocs)
+config/system/         – TYPO3-Systemkonfiguration (settings.php)
+config/sites/main/     – Site-Konfiguration (config.yaml)
+typo3conf/             – lokale TYPO3-Konfiguration
+var/                   – Cache & Logs (nicht versionieren)
+```
 
-Please be aware that the built-in web server is single threaded and only meant
-to be used for development.
+## Nächste Schritte
 
-##  Next steps
-
-* [Getting Started with TYPO3](https://docs.typo3.org/permalink/t3start:start)
-* [Create a Site Package](https://docs.typo3.org/permalink/t3sitepackage:start)
-
-## License
-
-GPL-2.0 or later
+- Domain-Modell der Lagerverwaltung (Artikel, Bestände) als TYPO3-Extension
+- Templates im Site-Package, Backend-Berechtigungen, Suchfunktion

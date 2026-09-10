@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_themes=1);
+declare(strict_types=1);
 
 namespace benh\sahiv\Domain\Repository;
 

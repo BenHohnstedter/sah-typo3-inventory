@@ -1,0 +1,6 @@
+.git
+/vendor
+/var
+/public/typo3temp
+/public/fileadmin
+/deploy/secrets

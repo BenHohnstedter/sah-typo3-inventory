@@ -1,0 +1,32 @@
+name: sah-typo3-inventory
+
+services:
+  sah-typo3-inventory:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+      args:
+        SITE_BASE: http://192.168.178.117:8086/
+    container_name: sah-typo3-inventory
+    restart: unless-stopped
+    ports:
+      - "8086:80"
+    volumes:
+      - typo3-var:/var/www/html/var
+      - typo3-temp:/var/www/html/public/typo3temp
+      - typo3-files:/var/www/html/public/fileadmin
+      - ./secrets/typo3-additional.php:/var/www/html/config/system/additional.php:ro
+    labels:
+      - "homelab.project=sah-typo3-inventory"
+      - "homelab.port=8086"
+    networks:
+      - homelab
+
+volumes:
+  typo3-var:
+  typo3-temp:
+  typo3-files:
+
+networks:
+  homelab:
+    external: true

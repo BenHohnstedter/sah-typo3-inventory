@@ -1,4 +1,9 @@
-FROM composer:2 AS vendor
+FROM php:8.2-cli AS vendor
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        libicu-dev libzip-dev git unzip \
+    && rm -rf /var/lib/apt/lists/* \
+    && docker-php-ext-install -j$(nproc) intl zip
+COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 WORKDIR /app
 COPY composer.json composer.lock ./
 RUN composer install --no-dev --no-interaction --prefer-dist --no-scripts --no-progress

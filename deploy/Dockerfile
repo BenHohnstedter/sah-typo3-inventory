@@ -20,6 +20,10 @@ ENV APACHE_DOCUMENT_ROOT=/var/www/html/public
 ARG SITE_BASE=http://192.168.178.117:8086/
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf \
     && sed -i "s|base: .*|base: '$SITE_BASE'|" /var/www/html/config/sites/main/config.yaml \
-    && a2enmod rewrite \
     && mkdir -p /var/www/html/var /var/www/html/public/typo3temp /var/www/html/public/fileadmin \
+    && cp /var/www/html/deploy/typo3-webroot/index.php /var/www/html/public/index.php \
+    && mkdir -p /var/www/html/public/typo3 \
+    && cp /var/www/html/deploy/typo3-webroot/typo3-index.php /var/www/html/public/typo3/index.php \
+    && cp /var/www/html/deploy/typo3-webroot/typo3-install.php /var/www/html/public/typo3/install.php \
+    && a2enmod rewrite \
     && chown -R www-data:www-data /var/www/html/var /var/www/html/public/typo3temp /var/www/html/public/fileadmin

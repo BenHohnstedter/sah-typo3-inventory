@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 COPY . /app
 WORKDIR /app
-RUN composer install --no-dev --no-interaction --prefer-dist --no-scripts --no-progress
+RUN composer install --no-dev --no-interaction --prefer-dist --no-progress
 
 FROM php:8.2-apache
 RUN apt-get update && apt-get install -y --no-install-recommends \

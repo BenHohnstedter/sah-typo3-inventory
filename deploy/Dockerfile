@@ -4,8 +4,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/* \
     && docker-php-ext-install -j$(nproc) intl zip
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
+COPY . /app
 WORKDIR /app
-COPY composer.json composer.lock ./
 RUN composer install --no-dev --no-interaction --prefer-dist --no-scripts --no-progress
 
 FROM php:8.2-apache

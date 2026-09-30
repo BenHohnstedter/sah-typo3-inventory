@@ -16,8 +16,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && docker-php-ext-install -j$(nproc) gd intl mysqli pdo pdo_mysql mbstring zip fileinfo opcache
 COPY --from=vendor /app/vendor /var/www/html/vendor
 COPY . /var/www/html
+ENV APACHE_DOCUMENT_ROOT=/var/www/html/public
 ARG SITE_BASE=http://192.168.178.117:8086/
-RUN sed -i "s|base: .*|base: '$SITE_BASE'|" /var/www/html/config/sites/main/config.yaml \
+RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf \
+    && sed -i "s|base: .*|base: '$SITE_BASE'|" /var/www/html/config/sites/main/config.yaml \
     && a2enmod rewrite \
     && mkdir -p /var/www/html/var /var/www/html/public/typo3temp /var/www/html/public/fileadmin \
     && chown -R www-data:www-data /var/www/html/var /var/www/html/public/typo3temp /var/www/html/public/fileadmin

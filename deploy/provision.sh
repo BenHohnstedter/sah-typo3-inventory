@@ -5,7 +5,7 @@ REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$REPO_ROOT"
 
 PROJECT="$(basename "$REPO_ROOT")"
-BRANCH="${BRANCH:-master}"
+BRANCH="${BRANCH:-main}"
 
 echo "[homelab] $PROJECT | Branch: $BRANCH"
 
